@@ -1,0 +1,453 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ 12.1158,45.44095 ]
+   },
+   "properties": {
+   "name":"AREA UMIDA COMUNETTO",
+   "abb_name":"comunetto",
+   "descrizione_breve":"Bacino di fitodepurazione",
+   "scopo_breve":"Miglioramento della qualità dell'acqua",
+   "posizione_breve":"Comune di Mira",
+   "descrizione_area":"L'Area Umida di Comunetto è un bacino di fitodepurazione che è stato realizzato tra lo Scolo Tergolino e il Rio Serraglio a Mira, con l'obiettivo di migliorare la qualità delle acque.",
+   "grandezza":"Circa 5 ettari",
+   "curiosità":"Il bacino è stato realizzato su terreni che in precedenza erano coltivati e che oggi, a conclusione dei lavori, possono contribuire a ridurre il rischio di allagamenti.",
+   "posizione":"Via Molinella | Comune di Mira<br>Provincia di Venezia",
+   "visitabile_breve":"Parzialmente",
+   "specie_reinserite":"Farnia, Carpino bianco, Acero campestre, Frassino ossifillo, Pioppo, Salice",
+   "specie_più_presente":"Airone guardabuoi",
+   "scientifico_specie_più_presente":"Bubulcus ibis",
+   "img_specie_più_presente":"https://static.inaturalist.org/photos/64697155/medium.jpg",
+   "descr_specie_più_presente":"Specie in espansione che frequenta l’area umida e i campi arati. Si nutre di insetti e piccoli roditori, segue trattori e mandrie. Utile per il bestiame come sentinella contro i predatori.",
+   "anno":"03-2000, 04-2010, 03-2015, 06-2024",
+   "video":"video_comunetto",
+   "no":"12.1124, 45.4435",
+   "ne":"12.1192, 45.4435",
+   "se":"12.1192, 45.43832",
+   "so":"12.1124, 45.43832",
+   "zoom":15.855,
+   "center":"12.1188, 45.44095"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ 12.33175,45.5613 ]
+   },
+   "properties": {
+   "name":"CAVE DI GAGGIO NORD",
+   "abb_name":"gaggio_nord",
+   "descrizione_breve":"Area umida protetta",
+   "scopo_breve":"Riqualificazione, conservazione biodiversità",
+   "posizione_breve":"Comune di Marcon",
+   "descrizione_area":"L’Oasi Cave di Gaggio nord è una zona umida di Marcon, parte della rete Natura 2000. Una delle ex cave di argilla del territorio, è stata oggetto di riqualificazione ambientale, con imboschimenti di circa 5 ettari - 4.900 piante.",
+   "grandezza":"5 ettari",
+   "curiosità":"Durante la riqualificazione il consorzio ha deciso di espandere l'area anche nella zona est andando ad intervenire su quelli che prima erano campi agricoli.",
+   "posizione":"Via Matteotti | Comune di Gaggio<br>Provincia di Venezia",
+   "visitabile_breve":"Con sentieri e pannelli informativi",
+   "specie_reinserite":"Pioppo, Salice, Olmo campestre, Frassino ossifillo, Farnia, Ontano nero",
+   "specie_più_presente":"Erba vescica delle risaie",
+   "scientifico_specie_più_presente":"Utricularia x neglecta",
+   "img_specie_più_presente":"https://inaturalist-open-data.s3.amazonaws.com/photos/404126727/medium.jpeg",
+   "descr_specie_più_presente":"Pianta acquatica carnivora con fiori giallo dorato e foglie sommerse munite di vescichette che fungono da trappole per piccoli animali acquatici.",
+   "anno":"05-2003, 04-2010, 05-2018, 07-2023",
+   "video":"video_gaggio_nord",
+   "no":"12.3255, 45.5660",
+   "ne":"12.3380, 45.5660",
+   "se":"12.3380, 45.5566",
+   "so":"12.3255, 45.5566",
+   "zoom":14.97,
+   "center":"12.33739, 45.5613"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ 12.0822,45.55455 ]
+   },
+   "properties": {
+   "name":"CAVE DI NOALE",
+   "abb_name":"noale",
+   "descrizione_breve":"Oasi naturalistica",
+   "scopo_breve":"Fitodepurazione, conservazione biodiversità",
+   "posizione_breve":"Comune di Noale",
+   "descrizione_area":"Le Cave di Noale sono un’area umida protetta riqualificata nel 2005 da Acque Risorgive, con la creazione di canali e uno stagno di 1 ettaro. Funziona come bacino di espansione, favorisce la fitodepurazione e ospita habitat rari. È ora un’Oasi WWF con finalità educative e scientifiche.",
+   "grandezza":"Circa 20 ettari",
+   "curiosità":"L’area, oltre a essere un rifugio per numerose specie, è un raro esempio di gestione integrata tra ambiente, idraulica e fruizione pubblica.",
+   "posizione":"Via Ongari | Comune di Noale<br>Provincia di Venezia",
+   "visitabile_breve":"Orari stagionali e sentieri attrezzati (WWF)",
+   "specie_reinserite":"Tarabuso, Tarabusino, Airone rosso, Rana di Lataste, Tritone crestato italiano",
+   "specie_più_presente":"Testuggine palustre europea",
+   "scientifico_specie_più_presente":"Emys orbicularis",
+   "img_specie_più_presente":"https://inaturalist-open-data.s3.amazonaws.com/photos/230597692/medium.jpeg",
+   "descr_specie_più_presente":"Specie autoctona in difficoltà per l’alterazione degli ambienti umidi. Si riconosce per il colore scuro e le punte giallastre. È longeva, può superare i 50 anni in natura.",
+   "anno":"03-2002, 04-2010, 03-2015, 02-2025",
+   "video":"video_noale",
+   "no":"12.0717, 45.5625",
+   "ne":"12.0927, 45.5625",
+   "se":"12.0927, 45.5469",
+   "so":"12.0717, 45.5469",
+   "zoom":14.21,
+   "center":"12.0918, 45.55455"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ 12.132225,45.53355 ]
+   },
+   "properties": {
+   "name":"OASI LYCAENA",
+   "abb_name":"lycena",
+   "descrizione_breve":"Oasi di fitodepurazione",
+   "scopo_breve":"Fitodepurazione, conservazione biodiversità",
+   "posizione_breve":"Comune di Salzano",
+   "descrizione_area":"L'Oasi Lycaena (ex Cave di Villetta di Salzano), è un'area protetta e soggetta a riqualificazione. L'area, precedentemente utilizzata per l'estrazione dell'argilla, è stata trasformata in un ecosistema filtro per purificare le acque che scorrono dal Fiume Marzenego al Rio Roviego.",
+   "grandezza":"65 ettari",
+   "curiosità":"Il deflusso dell'acqua nelle ex cave avviene lentamente senza l'ausilio di pompe, grazie alla differenza di altitudine tra i due corsi d'acqua.",
+   "posizione":"Via Leonardo da Vinci | Comune di Salzano<br>Provincia di Venezia",
+   "visitabile_breve":"Con sentieri e pannelli informativi",
+   "specie_reinserite":"Pioppo, Salice, Olmo campestre, Ontano nero",
+   "specie_più_presente":"Licena delle paludi",
+   "scientifico_specie_più_presente":"Lycaena dispar",
+   "img_specie_più_presente":"https://inaturalist-open-data.s3.amazonaws.com/photos/696728/medium.jpg",
+   "descr_specie_più_presente":"Farfalla diurna molto rara, legata agli ambienti umidi di pianura. È minacciata dalla scomparsa delle zone umide e la sua larva passa l'inverno all'interno di foglie arrotolate.",
+   "anno":"08-2004, 04-2010, 05-2017, 03-2025",
+   "video":"video_lycena",
+   "no":"12.12275, 45.5407",
+   "ne":"12.1417, 45.5407",
+   "se":"12.1417, 45.5264",
+   "so":"12.12275, 45.5264",
+   "zoom":14.365,
+   "center":"12.140775, 45.53355"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ 12.0449,45.58997 ]
+   },
+   "properties": {
+   "name":"GOLENA DRAGANZIOLO",
+   "abb_name":"draganziolo",
+   "descrizione_breve":"Area di espansione naturale",
+   "scopo_breve":"Riduzione del rischio idraulico",
+   "posizione_breve":"Comune di Trebaseleghe",
+   "descrizione_area":"La Golena si estende per circa 1 ettaro a ridosso del centro abitato. È stata creata in corrispondenza del Rio Draganziolo per permettere la divagazione dell’acqua in caso di piena. L’intervento restituisce spazio al fiume per mitigare i cambiamenti climatici, ricreando un ambiente umido con elevata biodiversità.",
+   "grandezza":"Circa 1 ettaro",
+   "curiosità":"L’area mostra come sia possibile convivere con l’acqua favorendone la libera evoluzione. La manutenzione è mirata a garantire il deflusso idraulico lasciando intatta la vegetazione spontanea.",
+   "posizione":"Parco del Draganziolo | Comune di Trebaseleghe<br>Provincia di Padova",
+   "visitabile_breve":"Sì, tramite percorsi ciclopedonali",
+   "specie_reinserite":"Ontano nero, Pioppo, Salice, Carice, Cannuccia di palude",
+   "specie_più_presente":"Splendente comune",
+   "scientifico_specie_più_presente":"Calopteryx splendens",
+   "img_specie_più_presente":"https://inaturalist-open-data.s3.amazonaws.com/photos/39295466/medium.jpg",
+   "descr_specie_più_presente":"Libellula europea di dimensioni medio-piccole. Il maschio è riconoscibile per il colore blu metallico con una fascia blu scuro sulle ali, mentre la femmina ha una tinta verde metallizzata uniforme.",
+   "anno":"03-2002, 04-2010, 08-2017, 06-2024",
+   "video":"video_draganziolo",
+   "no":"12.0417, 45.59232",
+   "ne":"12.0481, 45.59232",
+   "se":"12.0481, 45.58762",
+   "so":"12.0417, 45.58762",
+   "zoom":15.97,
+   "center":"12.04768, 45.58997"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ 12.3831,45.5511 ]
+   },
+   "properties": {
+   "name":"GOLENE SALMASTRE FIUME ZERO",
+   "abb_name":"zero",
+   "descrizione_breve":"Area golenale riqualificata",
+   "scopo_breve":"Riduzione del rischio idraulico",
+   "posizione_breve":"Comune di Marcon",
+   "descrizione_area":"Le Golene salmastre del fiume Zero sono parte di un intervento di riqualificazione ambientale che ha riguardato gli ultimi 10 km del fiume. Sono stati realizzati allargamenti fino a 35 m di larghezza, con quote differenziate per ospitare specie erbacee e arboree. Le banchine più basse accolgono canneti, mentre le aree più elevate ospitano alberi e arbusti.",
+   "grandezza":"Circa 3 km di sviluppo lineare",
+   "curiosità":"Le golene sono attraversate da un percorso ciclabile naturalistico che parte da Quarto d’Altino, con possibilità di itinerario ad anello lungo il canale Siloncello e il fiume Sile.",
+   "posizione":"Da Marcon a Fiume Dese | Comune di Marcon | Provincia di Venezia",
+   "visitabile_breve":"Con la ciclopedonale lungo il fiume Zero",
+   "specie_reinserite":"Pioppo, Olmo campestre, Frassino ossifillo, Ontano nero, Biancospino",
+   "specie_più_presente":"Cannuccia di palude",
+   "scientifico_specie_più_presente":"Phragmites australis",
+   "img_specie_più_presente":"https://inaturalist-open-data.s3.amazonaws.com/photos/113593857/medium.jpg",
+   "descr_specie_più_presente":"Pianta erbacea tipica delle zone umide, forma densi canneti che offrono rifugio e sito di nidificazione per numerose specie di uccelli acquatici",
+   "anno":"01-2002, 05-2006, 03-2012, 03-2022",
+   "video":"video_zero",
+   "no":"12.3792, 45.5540",
+   "ne":"12.3870, 45.5540",
+   "se":"12.3870, 45.5482",
+   "so":"12.3792, 45.5482",
+   "zoom":15.67,
+   "center":"12.3865, 45.5511"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ 11.81545,45.62415 ]
+   },
+   "properties": {
+   "name":"PALUDE DI ONARA",
+   "abb_name":"onara",
+   "descrizione_breve":"Palude protetta di risorgiva",
+   "scopo_breve":"Tutela di un ecosistema unico",
+   "posizione_breve":"Comune di Tombolo",
+   "descrizione_area":"La Palude di Onara è una zona umida tutelata, unica superstite delle paludi torbose del padovano. Ospita specie botaniche glaciali e rare, tra cui numerose orchidee. La palude si estende su 148 ettari, ma la parte più naturalistica è ridotta a 30, in un contesto fortemente antropizzato.",
+   "grandezza":"148 ettari",
+   "curiosità":"Le specie glaciali sopravvivono grazie alle acque fredde di risorgiva; attraversata dal Tergola, collegata al Brenta; presenza di fiori completamente protetti.",
+   "posizione":"Sud di Cittadella | Comune di Tombolo<br>Provincia di Padova",
+   "visitabile_breve":"Su prenotazione",
+   "specie_reinserite":"Elleborine, Orchidea palustre, Spiranthes aestivalis",
+   "specie_più_presente":"Raganella italiana",
+   "scientifico_specie_più_presente":"Hyla intermedia",
+   "img_specie_più_presente":"https://inaturalist-open-data.s3.amazonaws.com/photos/326595076/medium.jpeg",
+   "descr_specie_più_presente":"Anfibio endemico dell’Italia, vive in ambienti umidi con buona qualità dell’acqua e ricca vegetazione.",
+   "anno":"07-2004, 07-2012, 05-2017, 03-2021",
+   "video":"video_onara",
+   "no":"11.8070, 45.6303",
+   "ne":"11.8239, 45.6303",
+   "se":"11.8239, 45.6180",
+   "so":"11.8070, 45.6180",
+   "zoom":14.58,
+   "center":"11.82258, 45.62415"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ 12.08545,45.4441 ]
+   },
+   "properties": {
+   "name":"SCOLO PIONCA",
+   "abb_name":"pionca",
+   "descrizione_breve":"Corso d’acqua riqualificato",
+   "scopo_breve":"Miglioramento della qualità dell'acqua",
+   "posizione_breve":"Comuni di Pianiga, Mirano e Mira",
+   "descrizione_area":"Lo Scolo Pionca è un corso d’acqua dei Comuni di Pianiga, Mirano e Mira, interessato da un importante intervento di riqualificazione ambientale su un tratto di 2.800 metri. Il canale è stato significativamente allargato e le zone golenali favoriscono la fitodepurazione e l’habitat per la fauna.",
+   "grandezza":"Tratto riqualificato lungo 2,8 km",
+   "curiosità":"Il canale, in alcuni punti, è passato da 10 a 70 metri di larghezza. Sono presenti popolamenti di Ninfea gialla che profumano intensamente l’ambiente nel periodo di fioritura. Gli ampliamenti hanno favorito i canneti e la qualità dell’acqua.",
+   "posizione":"Comuni di Pianiga, Mirano e Mira<br>Provincia di Venezia",
+   "visitabile_breve":"Parzialmente",
+   "specie_reinserite":"Cannuccia di palude, Salice, Ontano nero",
+   "specie_più_presente":"Ninfea gialla",
+   "scientifico_specie_più_presente":"Nuphar lutea",
+   "img_specie_più_presente":"https://inaturalist-open-data.s3.amazonaws.com/photos/209925087/medium.jpeg",
+   "descr_specie_più_presente":"Pianta acquatica che vive in acque stagnanti o a lento deflusso, con grandi foglie galleggianti e fiori gialli profumati che emergono dalla superficie dell’acqua. Offre rifugio a molte specie animali e vegetali.",
+   "anno":"03-2002, 04-2010, 06-2016, 06-2024",
+   "video":"video_pionca",
+   "no":"12.0806, 45.4476",
+   "ne":"12.0903, 45.4476",
+   "se":"12.0903, 45.4406",
+   "so":"12.0806, 45.4406",
+   "zoom":15.395,
+   "center":"12.0894, 45.4441"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ 12.3175,45.571575 ]
+   },
+   "properties": {
+   "name":"SITO NICOLAS",
+   "abb_name":"nicolas",
+   "descrizione_breve":"Zona tampone arborea",
+   "scopo_breve":"Fitodepurazione e valore naturalistico",
+   "posizione_breve":"Comune di Mogliano Veneto",
+   "descrizione_area":"Il Sito Nicolas si trova all’interno di una Zona Tampone arborea di 30 ettari, realizzata da Acque Risorgive e Veneto Agricoltura. L’area è irrigata con acqua del Fiume Zero tramite un impianto con pompe e scoline che favorisce la rimozione dell’azoto. È stata progettata con moduli sperimentali per combinare obiettivi produttivi e naturalistici.",
+   "grandezza":"30 ettari",
+   "curiosità":"Il sito prende il nome da un progetto di ricerca europeo (NICOLAS, 1997-2000) dedicato al controllo dell’azoto in ambiente agricolo. Presenta un sistema di irrigazione innovativo con deflusso sotterraneo e ospita due sentieri didattici - Sentiero dell’Acqua e del Bosco.",
+   "posizione":"Zona agricola dell’Azienda Diana | Comune di Mogliano Veneto<br>Provincia di Treviso",
+   "visitabile_breve":"Con sentieri e visite guidate",
+   "specie_reinserite":"Pioppo, Frassino ossifillo, Salice",
+   "specie_più_presente":"Tritone crestato italiano",
+   "scientifico_specie_più_presente":"Triturus carnifex",
+   "img_specie_più_presente":"https://inaturalist-open-data.s3.amazonaws.com/photos/240867952/medium.jpeg",
+   "descr_specie_più_presente":"Anfibio notturno e predatore, in declino a causa della perdita di habitat. I maschi sviluppano una cresta vertebrale durante la stagione riproduttiva, le femmine sono più grandi e con striscia gialla dorsale.",
+   "anno":"05-2003, 04-2010, 08-2017, 07-2023",
+   "video":"video_nicolas",
+   "no":"12.3103, 45.57695",
+   "ne":"12.3247, 45.57695",
+   "se":"12.3247, 45.5662",
+   "so":"12.3103, 45.5662",
+   "zoom":14.775,
+   "center":"12.32385, 45.571575"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ 12.281815,45.52148 ]
+   },
+   "properties": {
+   "name":"BOSCO DI FRANCA E OTTOLENGHI",
+   "abb_name":"ottolenghi",
+   "descrizione_breve":"Zona umida",
+   "scopo_breve":"Fitodepurazione, conservazione biodiversità",
+   "posizione_breve":"Favaro Veneto",
+   "descrizione_area":"La Zona umida del Bosco di Franca e Ottolenghi è stata creata nell’ambito del programma \"Bosco di Mestre\", con la realizzazione di due bacini per la fitodepurazione delle acque e la valorizzazione naturalistica del territorio. Le sponde sono state modellate per ospitare diverse condizioni di umidità e favorire una ricca biodiversità.",
+   "grandezza":"22 ettari complessivi",
+   "curiosità":"La profondità differenziata dei bacini crea microhabitat ideali per molte specie. La Lisca di Laxmann, pianta rara, è stata impiantata per arricchire la biodiversità. Il bosco è intitolato agli studenti desaparecidos argentini, rappresentati da Franca Jarach.",
+   "posizione":"Via Forte Cosenz | Comune di Venezia<br>Provincia di Venezia",
+   "visitabile_breve":"Con percorsi ciclopedonali e ippovia",
+   "specie_reinserite":"Carice, Cannuccia di palude, Rana di Lataste",
+   "specie_più_presente":"Lisca di Laxmann",
+   "scientifico_specie_più_presente":"Typha laxmannii",
+   "img_specie_più_presente":"https://static.inaturalist.org/photos/47633409/medium.jpeg",
+   "descr_specie_più_presente":"Pianta palustre rara, alta fino a 130 cm, con infiorescenze a forma di mazza. Cresce sulle sponde di stagni e paludi. Il suo nome onora Erik Laxmann, naturalista finlandese del XVIII secolo.",
+   "anno":"05-2003, 04-2010, 06-2016, 05-2023",
+   "video":"video_ottolenghi",
+   "no":"12.2764, 45.52563",
+   "ne":"12.28723, 45.52563",
+   "se":"12.28723, 45.51733",
+   "so":"12.2764, 45.51733",
+   "zoom":15.15,
+   "center":"12.286885, 45.52148"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ 12.29875,45.56765 ]
+   },
+   "properties": {
+   "name":"RIO BIANCHI",
+   "abb_name":"riobianchi",
+   "descrizione_breve":"Bacino di fitodepurazione",
+   "scopo_breve":"Miglioramento della qualità dell'acqua",
+   "posizione_breve":"Comune di Marcon",
+   "descrizione_area":"Il progetto ha interessato una zona umida di 2,7 ettari, un bosco di oltre 1 ettaro, due banchine alberate lungo lo Scolo Zermason e due corridoi ecologici arborei per un totale di 1.200 metri. Completata nel 2014, l’area è ancora in fase di evoluzione naturale ma ospita già numerose specie animali e vegetali.",
+   "grandezza":"Circa 4 ettari complessivi",
+   "curiosità":"L’impianto idroelettrico sul Fiume Zero è visibile dal ponte di Via Don Ballan; le specie presenti sono in gran parte pionieristiche e l’area è stata modellata per favorire uno sviluppo vegetativo spontaneo nel tempo.",
+   "posizione":"Tra Via Bonfadini e Via Don Ballan | Comune di Marcon<br>Provincia di Venezia",
+   "visitabile_breve":"Tramite l’argine sinistro del Fiume Zero",
+   "specie_reinserite":"Carice, Ontano nero, Salice, Pioppo",
+   "specie_più_presente":"Rospo smeraldino",
+   "scientifico_specie_più_presente":"Bufotes viridis",
+   "img_specie_più_presente":"https://inaturalist-open-data.s3.amazonaws.com/photos/393829079/medium.jpg",
+   "descr_specie_più_presente":"Anfibio pioniero riconoscibile per le macchie verdi bordate di nero. Emette un veleno difensivo e il maschio canta per attrarre la femmina durante il periodo riproduttivo. Può vivere fino a 12 anni.",
+   "anno":"05-2003, 04-2011, 04-2020, 07-2023",
+   "video":"video_riobianchi",
+   "no":"12.29389, 45.5714",
+   "ne":"12.30361, 45.5714",
+   "se":"12.30361, 45.5639",
+   "so":"12.29389, 45.5639",
+   "zoom":15.29,
+   "center":"12.30332, 45.56765"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ 12.20361,45.58122 ]
+   },
+   "properties": {
+   "name":"SCOLO ZERETTO",
+   "abb_name":"zeretto",
+   "descrizione_breve":"Area umida protetta",
+   "scopo_breve":"Miglioramento della qualità dell'acqua",
+   "posizione_breve":"Campocroce di Mogliano Veneto",
+   "descrizione_area":"Lo Scolo Zeretto è stato oggetto di un intervento che ha incluso l’ampliamento dello scolo, la creazione di una zona umida e la piantumazione di una fascia arborea. È stato realizzato un collegamento con le acque del fiume Zero, contribuendo a migliorare la qualità dell’acqua. Al termine dei lavori, nel 2016, sono state osservate 33 specie di uccelli.",
+   "grandezza":"Circa 1,7 ettari",
+   "curiosità":"In alcuni punti il Fiume Zero e lo Scolo Zeretto corrono paralleli. Prima dei lavori la larghezza alla sommità dello Scolo Zeretto era di circa 8 metri mentre ora nel punto più largo raggiunge i 60 metri.",
+   "posizione":"Via del Molino | Comune di Mogliano Veneto<br>Provincia di Treviso",
+   "visitabile_breve":"Tramite l’argine sinistro dello Scolo Zeretto",
+   "specie_reinserite":"Pioppo, Salice, Olmo campestre, Ontano nero",
+   "specie_più_presente":"Corriere piccolo",
+   "scientifico_specie_più_presente":"Thinornis dubius",
+   "img_specie_più_presente":"https://inaturalist-open-data.s3.amazonaws.com/photos/28895106/medium.jpg",
+   "descr_specie_più_presente":"Uccello limicolo che nidifica a terra, in piccole depressioni spesso rifinite con piume, sassolini e frammenti. Specie minacciata, particolarmente sensibile al disturbo umano.",
+   "anno":"08-2004, 04-2011, 08-2017, 04-2020",
+   "video":"video_zeretto",
+   "no":"12.20111, 45.58305",
+   "ne":"12.20611, 45.58305",
+   "se":"12.20611, 45.57934",
+   "so":"12.20111, 45.57934",
+   "zoom":16.325,
+   "center":"12.20573, 45.58122"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ 12.34389,45.56298 ]
+   },
+   "properties": {
+   "name":"LAGO POJAN",
+   "abb_name":"pojan",
+   "descrizione_breve":"Bacino di espansione",
+   "scopo_breve":"Rallentamento del deflusso delle acque",
+   "posizione_breve":"Comune di Marcon",
+   "descrizione_area":"Il Lago Pojan è un bacino di espansione artificiale di 2,5 ettari realizzato nel 2003, lungo il basso corso del Fiume Zero. Il bacino ha funzioni di fitodepurazione e attenuazione delle piene, ed è stato progettato con argini a quote variabili per ospitare diverse specie vegetali. Il vecchio argine è oggi un’isola alberata. Il sito è parte della rete Natura 2000 e ospita specie ittiche rare, come la Savetta e il Ghiozzetto di laguna, tutelate dalla Direttiva Habitat.",
+   "grandezza":"2,5 ettari",
+   "curiosità":"Il vecchio argine è stato trasformato in isola con vegetazione spontanea. Il bacino è stato oggetto di monitoraggi faunistici che hanno evidenziato la presenza di specie rare.",
+   "posizione":"Nord di San Liberale | Comune di Marcon<br>Provincia di Venezia",
+   "visitabile_breve":"Solo su prenotazione",
+   "specie_reinserite":"Olmo campestre, Frassino ossifillo, Farnia, Salice",
+   "specie_più_presente":"Savetta",
+   "scientifico_specie_più_presente":"Chondrostoma soetta",
+   "img_specie_più_presente":"https://inaturalist-open-data.s3.amazonaws.com/photos/240352639/medium.jpg",
+   "descr_specie_più_presente":"Pesce endemico della pianura padano-veneta che si nutre di alghe sui fondali, compie lunghi spostamenti e si riproduce in tratti fluviali con ghiaia e acqua corrente. La presenza di diverse classi d’età testimonia l’importanza del Fiume Zero per la sua conservazione.",
+   "anno":"01-2002, 04-2010, 08-2017, 07-2023",
+   "video":"video_pojan",
+   "no":"12.34056, 45.56545",
+   "ne":"12.34722, 45.56545",
+   "se":"12.34722, 45.5605",
+   "so":"12.34056, 45.5605",
+   "zoom":15.9,
+   "center":"12.34679, 45.56298"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ 12.2301,45.573 ]
+   },
+   "properties": {
+   "name":"SCOLO RUSTEGHIN",
+   "abb_name":"rusteghin",
+   "descrizione_breve":"Bacino di fitodepurazione",
+   "scopo_breve":"Depurazione naturale delle acque",
+   "posizione_breve":"Campocroce di Mogliano Veneto",
+   "descrizione_area":"I bacini dello Scolo Rusteghin sono stati progettati per allungare il tempo di permanenza dell’acqua e favorire così i processi di depurazione. L’area, pur essendo circondata da vie molto trafficate, è stata colonizzata spontaneamente da numerose specie vegetali (137 individuate nei primi due anni) e da almeno 23 specie di uccelli.",
+   "grandezza":"Circa 3,5 ettari",
+   "curiosità":"Nonostante l’ambiente urbano, l’area è diventata un habitat attivo con le prime nidificazioni del germano reale. Già nel primo anno si sono formati densi canneti con prevalenza di Typha.",
+   "posizione":"Campocroce di Mogliano Veneto | Comune di Mogliano Veneto<br>Provincia di Treviso",
+   "visitabile_breve":"Non accessibile internamente",
+   "specie_reinserite":"Lisca maggiore, Lisca di Laxmann, Lisca marittima, Giunco compresso",
+   "specie_più_presente":"Marangone minore",
+   "scientifico_specie_più_presente":"Microcarbo pygmaeus",
+   "img_specie_più_presente":"https://inaturalist-open-data.s3.amazonaws.com/photos/48978906/medium.jpg",
+   "descr_specie_più_presente":"Il più piccolo tra i cormorani, con piumaggio nero dai riflessi verdi. Nidifica in colonie vicino all'acqua, costruendo nidi grossolani con canne e stecchi.",
+   "anno":"08-2004, 04-2010, 08-2017, 02-2025",
+   "video":"video_rusteghin",
+   "no":"12.2258, 45.5762",
+   "ne":"12.2344, 45.5762",
+   "se":"12.2344, 45.5698",
+   "so":"12.2258, 45.5698",
+   "zoom":15.525,
+   "center":"12.23385, 45.573"
+   }
+ }
+]
+}
