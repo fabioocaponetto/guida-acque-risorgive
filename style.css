@@ -1,0 +1,2641 @@
+/* style.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Archivo', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.pagina-mappa {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.linea-titolo {
+    /* position: absolute;
+    top: 180px; 
+    left: 0px; */
+    width: 100%;
+    border: none;
+    border-top: 1px solid black;
+}
+
+::selection {
+    background: #e0e73f;
+    color: black; /* o qualsiasi colore del testo vuoi durante la selezione */
+}
+
+hr {
+    border-top: 1px solid black;
+}
+
+.home {
+    display: flex;
+    width: 100%;
+    height: 96%;
+    position: relative;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e0e73f;
+    color: black;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 98%;
+    height: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: medium;
+    z-index: 1000;
+}
+
+#consorzio {
+    cursor: pointer;
+}
+
+
+.griglia {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    /* border-top: none; */
+    margin-top: 36px;
+}
+
+.frase {
+    width: 100%;
+    height: 100%;
+    font-size: 70px;
+    color: black;
+}
+
+.frase a {
+    position: absolute;
+    top:1%;
+    left:1%
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.frase .linea {
+    opacity: 0;
+    animation: fadeInUp 0.3s forwards;
+}
+
+.frase .linea:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.frase .linea:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.frase .linea:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+
+.link {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-top: solid 1px black;
+}
+
+.bottoni-scroll {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cosa-facciamo2, #contattaci2 {
+    position: relative;
+    width: 25%;
+    border-right: solid 1px black;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    z-index: 10;
+}
+
+#cosa-facciamo2::before, #contattaci2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99.8%;
+    height: 100%;
+    background-color: #1f18c0; /* colore che vuoi */
+    transform: scaleX(1) scaleY(0.02);  /* inizialmente largo 50%, alto 5% */
+    transform-origin: top left;  /* da dove parte la trasformazione */
+    transition: transform 0.5s ease;
+    border-right: solid 1px #1f18c0;
+    z-index: 0;
+}
+
+#contattaci2::before {
+    background-color: #e0e73f;
+    z-index: 0;
+    border-right: none;
+
+}
+
+#cosa-facciamo2.attivo::before {
+    transform: scaleX(1) scaleY(1); 
+}
+
+#contattaci2.attivo::before {
+    transform: scaleX(1) scaleY(1); 
+}
+
+#cosa-facciamo2 a, #contattaci2 a {
+    position: absolute;
+    color: black;
+    left: 2%;
+    top: 5%;
+    padding: 5px;
+    padding-right: 10px;
+    font-size: large;
+    transition: transform 0.5s ease;
+}
+
+#testo-bottoni-scroll {
+    font-size: medium;
+    color: gray
+}
+
+#simbolo-paragrafo, #simbolo-paragrafo2 {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    transform: scale(0.1) rotate(-45deg);
+    height: auto;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+}
+
+#simbolo-paragrafo.show, #simbolo-paragrafo2.show {
+    position: absolute;
+    transform: scale(0.2);
+    bottom: 40px;
+    right: 20px;
+    transition: transform 0.5s ease;
+}
+
+.esplora-mappa {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden; /* per tagliare l’immagine se esce */
+    background-color: black;
+}
+
+.esplora-mappa a {
+    padding: 10px;
+    background-color: #1f18c0;
+    border: solid 1px black;
+    color: #f7f7f7;
+    font-size: medium;
+    z-index: 10;
+    text-align: center;
+    transition: 0.2;
+    cursor: pointer;
+}
+
+.esplora-mappa img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;       /* riempi tutto il container */
+    height: 100%;      /* riempi tutto il container */
+    object-fit: cover; /* ridimensiona senza deformare */
+    z-index: 0;
+    opacity: 1;
+    pointer-events: none; /* per non interferire con i clic sul testo */
+    transition: transform 0.5s ease;
+    pointer-events: none;
+}
+
+
+.titolo-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.titolo-grande {
+    color: rgba(31, 24, 192, 1);
+    font-size: 205px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.sede {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 40px;
+    color: #f7f7f7;
+    mix-blend-mode: difference; /* 💥 magia qui */
+    z-index: 2;
+}
+
+.claim {
+    /* position: absolute;
+    bottom: -20px;
+    margin-left: 10px; */
+    color:black;
+    width: 80%;
+    font-size: 80px;
+    font-weight: 100;
+    padding-left: 10px;
+}
+
+.button-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: large;
+}
+
+
+.mostra-mappa {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.map-container {
+    height: 100%;
+    width: 100%;
+    margin-top: 41px;
+    position: relative;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.map-overlay {
+    display: none;
+    position: absolute;
+    right: 3%;
+    top: 10%;
+    width: 500px;
+    white-space: wrap;
+}
+
+.titolo_overlay {
+    background-color: rgb(31,24,192);
+    color: #f7f7f7;
+    padding: 15px;
+    font-size: small;
+    margin-bottom: 5px;
+    border: solid 1px black;
+}
+
+.descrizione {
+    background: #f7f7f7;
+    color: black;
+    padding-left: 0px;
+    padding: 15px;
+    padding-bottom: 20px;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.descr-item {
+    padding: 3px;
+    align-self: flex-start;
+}
+
+.more-button {
+    color: rgba(31, 24, 192, 1);
+    background-color: #f7f7f7;
+    padding:10px;
+    align-self: flex-end; /* questa riga posiziona il bottone sulla destra */
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.more-button:hover {
+    color: black;
+    background-color: #e0e73f;
+}
+
+.mapboxgl-popup {
+    border-radius: 0 !important;
+}
+
+.mapboxgl-popup-content {
+    border-radius: 0 !important;
+    padding: 10px !important; /* opzionale: modifica il padding */
+    background-color: #f7f7f7; /* oppure personalizza */
+    font-size: small;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    z-index: 1;
+    gap: 10px;
+}
+
+#esplora-button {
+    background-color: rgba(31, 24, 192, 1);
+    color: #f7f7f7;
+    padding: 10px 12px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: small;
+    border: solid 1px black;
+    transition: 0.2s;
+}
+
+#esplora-button:hover {
+    background-color: black;
+}
+
+#mostra-video {
+    background-color: rgba(31, 24, 192, 1);
+    color: #f7f7f7;
+    padding: 10px 12px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: small;
+    border: solid 1px black;
+    transition: 0.2s;
+}
+
+#mostra-video:hover {
+    background-color: #e0e73f;
+    color: black;
+}
+
+#slider {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    z-index: 1;
+    width: auto;
+
+    display: none;
+}
+
+#return-button {
+    position: relative;
+    background-color: rgba(31, 24, 192, 1);
+    color: #f7f7f7;
+    padding: 10px 12px;
+    z-index: 10;
+    font-size: small;
+    cursor: pointer;
+    border: solid 1px black;
+    transition: 0.2s;
+}
+
+#return-button:hover {
+    background-color: black;
+}
+
+#avanti, #indietro {
+    position: relative;
+    height: 24px;
+    padding: 5px;
+    z-index: 10;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    border: solid 1px black;
+    transition: 0.2s;
+}
+
+#avanti:hover, #indietro:hover {
+    background-color: rgb(31,24,192);
+}
+
+.av-in {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap; /* default */
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.areatempo1,
+.areatempo2,
+.areatempo3,
+.areatempo4 {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    border-right: 1px solid black;
+    z-index: 90;
+    box-sizing: border-box;
+}
+
+.areatempo4 {
+    border-right: none;
+}
+
+/* TESTI SOPRA LE IMMAGINI */
+.areatempo1 p,
+.areatempo2 p,
+.areatempo3 p,
+.areatempo4 p {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    margin: 0;
+    font-size: x-large;
+    color: white;
+    background-color: black;
+    padding: 0px 3px;
+    z-index: 100;
+    display: block;
+}
+
+/* IMMAGINI */
+#areatempo1,
+#areatempo2,
+#areatempo3,
+#areatempo4 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+#areatempo1 {
+    display: block;
+}
+
+.areatempo1 p,
+.areatempo2 p,
+.areatempo3 p,
+.areatempo4 p {
+    position: absolute;   /* serve per usare left/bottom */
+    left: 10px;
+    bottom: 10px;
+    margin: 0;
+    font-size: x-large;
+    color: white;
+    background-color: black;
+    padding: 0px 3px;
+    z-index: 100;
+
+    display: block;
+}
+
+img[id^="areatempo"] {
+    opacity: 0.4;
+    transition: opacity 0.2s;
+}
+
+#testo-hover {
+    background-color: #e0e73f;
+    color: black;
+    font-size: xx-large;
+    padding: 5px 10px;
+    z-index: 999;
+}
+
+#satellite-button {
+    background-color: none;
+    color: black;
+    padding: 10px 12px;
+    font-size: small;
+    cursor: pointer;
+    border: solid 1px black;
+    transition: 0.2s;
+}
+
+#acqua-button {
+    background-color: none;
+    color: black;
+    padding: 10px 12px;
+    font-size: small;
+    cursor: pointer;
+    border: solid 1px black;
+    transition: 0.2s;
+}
+
+#flora-button {
+    background-color: none;
+    color: black;
+    padding: 10px 12px;
+    font-size: small;
+    cursor: pointer;
+    border: solid 1px black;
+    transition: 0.2s;
+}
+
+#mostra-img {
+    background-color: rgb(31,24,192);
+    color: #f7f7f7;
+    padding: 10px 12px;
+    font-size: small;
+    cursor: pointer;
+    border: solid 1px black;
+    transition: 0.2s;
+}
+
+#mostra-img:hover {
+    background-color: black;
+    color: #f7f7f7;
+    padding: 10px 12px;
+    font-size: small;
+    cursor: pointer;
+    border: solid 1px black;
+    transition: 0.2s;
+}
+
+.info-specie {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 2%;
+    margin-top: 4%;
+}
+
+
+.specie-area {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 7%;
+}
+
+#img-specie-presente {
+    width: 33%;
+    height: 250px;
+    background-color: #1F18C0;
+}
+
+#img-specie-reinserite {
+    width: 50%;
+    height: 250px;
+}
+
+#img-specie-presente img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+#img-specie-reinserite img {
+    position: relative;
+    z-index: 50;
+    width: 67%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+#testo-specie-presente, #testo-specie-reinserite {
+    width: 33%;
+}
+
+#elenco-specie-reinserite {
+    margin-top: 4%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.titolo-osservazioni {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.crediti-inat {
+    position: absolute;
+    right: 0%;
+    font-size: x-small;
+    color: rgb(160, 160, 160);
+}
+
+.crediti-sat {
+    position: relative;
+    font-size: x-small;
+    padding-top: 0.5%;
+    color: gray;
+}
+
+
+#specie-presente, #specie-reinserite, #osservazioni-area {
+    background-color: #e0e73f;
+    width: 50%;
+    padding-right: 2%;
+    color: black;
+    padding: 10px 12px;
+    font-size: small;
+    cursor: pointer;
+    border: solid 1px black;
+    transition: 0.2s;
+}
+
+.specie-presente, .specie-reinserite {
+    position: relative;
+    width: 50%;
+    padding-right: 2%;
+}
+
+
+/* .comunetto2 {
+    left: 25%;
+    border-right: 1px solid black;
+
+}
+.comunetto3 {
+    left: 50%;
+    border-right: 1px solid black;
+
+}
+.comunetto4 {
+    left: 75%; border-right: none;
+} */
+
+
+.button-scelta {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    background-color: #e0e73f;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    z-index: 999;
+}
+
+.square.fade-out {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.extra-overlay {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    width: 94%;
+    height: 94.85%;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+    border: solid 1px black;
+    z-index: 100;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.extra-overlay.show {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.overlay-content {
+    padding-top: 1.5%;
+    padding-bottom: 3%;
+    padding: 2.5%;
+    right: 0%;
+    left: 0%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.linea-tempo {
+    width: 25%;
+    height: 2%;
+    background-color: rgb(31,24,192);
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.animated-img {
+    position: absolute;
+    width: 400px; /* o qualsiasi misura ti piaccia */
+    height: auto;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 1s;
+    z-index: 999;
+}
+
+.animated-img.fade-out {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.info-container {
+    font-size: medium;
+    overflow-x: hidden;
+}
+
+.info-consorzio {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    height: auto;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2.5%;
+    margin-bottom: 9%;
+}
+
+
+.img-info-consorzio {
+    position: relative;
+    width: 25%;
+    height: 200px;
+}
+
+#img-info-consorzio {
+    width: 100%;  /* Fa sì che l'immagine occupi tutta la larghezza del div */
+    height: 100%; /* Fa sì che l'immagine occupi tutta l'altezza del div */
+    object-fit: cover;
+}
+
+.testo-info-consorzio {
+    width: 50%;
+}
+
+.testo-info-territorio {
+    width: 33%;
+}
+
+
+.img-info-territorio {
+    position: relative;
+    width: 50%;
+    height: auto;
+}
+
+#img-info-territorio {
+    width: 100%;  /* Fa sì che l'immagine occupi tutta la larghezza del div */
+    height: 100%; /* Fa sì che l'immagine occupi tutta l'altezza del div */
+    object-fit: cover;
+}
+
+
+.info-territorio {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    margin-top:8%;
+    margin-bottom: 9%;
+}
+
+.riquadro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 calc(16.66% - 20px); /* 6 per riga su desktop */
+    text-align: center;
+    font-size: x-large;
+    text-align: center;
+    border-right: 1px black solid;
+    background-color: transparent;
+    color: black;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#riquadro-testo {
+    font-size: medium
+}
+
+.riquadro:hover,
+.riquadro.active {
+  background-color: #1f18c0;
+  color: #f7f7f7;
+}
+
+.info-territorio .riquadro:last-child {
+    border-right: none
+}
+
+.tooltipinfo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.tooltipinfotext {
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    background-color: #e0e73f;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    left: -1px;
+    padding: 10px 0;
+    bottom: 110%;
+    font-size: 14px;
+    transition: opacity 0.3s;
+    font-size: small
+}
+  
+  /* Mostra tooltip quando active */
+.riquadro.active .tooltipinfotext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.attivita {
+    margin-top: 7%;
+    width: 100%;
+}
+
+.frase-attivita {
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 49%;
+}
+
+.tipologie-attivita {
+    margin-top: 2%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    border: solid 1px black;
+}
+
+.attivita-box {
+    width: 33.3%;
+    min-height: 600px;
+    border-right: solid 1px black;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1.5%;
+    position: relative;
+}
+
+.attivita-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#attivita-img {
+    position: absolute;
+    width: 95%;
+    bottom: 2.5%;
+    right: 2.5%;
+}
+
+.tipologie-attivita .attivita-box:last-child {
+    border-right: none;
+}
+
+.titoletto {
+    padding: 15px;
+    background-color: rgb(31,24,192);
+    font-size: 20px;
+    color: #f7f7f7;
+}
+
+.header-descrizione {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgb(31,24,192);
+    margin-bottom: 1%;
+    border: solid 1px black;
+}
+
+#close-overlay {
+    margin-top: 6px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+}
+
+.descrizione-area {
+    width: 50%;
+    margin-bottom: 3%;
+}
+
+
+.curiosita {
+    margin-top: 2%;
+    width: 100%;
+    height: auto;
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 9%;
+}
+
+.grandezza, .posizione, .testo-curiosita {
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    gap: 2%
+}
+
+.footer, .info-container {
+    display: none
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    z-index: 9999;
+}
+    
+.square1, .square2, .square3 {
+    width: 20px;
+    height: 20px;
+    margin-top: 50vh;
+    background-color: #1f18c0;
+    transition: background-color 0.5s ease;
+    padding: 10px;
+}
+
+.nature-based {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 175px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    flex-direction: row;
+    /* background-color: #eaeaea; */
+    /* margin-top: 4%; */
+    /* margin-bottom: 3%; */
+}
+
+#testo-nature-based {
+    width: 50%;
+    padding: 1%;
+    padding-top: 2%;
+    border-right: 1px solid black;
+}
+
+#punti-nbs-testo {
+    width: 100%;
+    padding-top: 2%;
+    padding-right: 1%;
+    padding-left: 1%;
+    border-right: 1px solid black;
+}
+
+.lavori-principali {
+    width: 100%;
+    height: auto;
+    min-height: 175px;
+    margin-top: 2%;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+  
+
+.argini, .fitodepurazione {
+    position: relative;
+    border-right: solid 1px black;
+    padding: 1%;
+    padding-top: 2.5%;
+    width: 100%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    justify-content: flex-start;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.fitodepurazione {
+    border-right: none;
+}
+
+#testo-argini, #testo-fitodepurazione {
+    display: none;
+    position: relative;
+}
+
+#crediti-img-argini, #crediti-img-fitodepurazione {
+    display: none;
+    position: relative;
+    height: 70%;
+    flex-direction: row;
+    column-gap: 1%;
+}
+
+#crediti-img-argini img, #crediti-img-fitodepurazione img {
+    height: 90%;
+}
+
+#crediti-img-argini-foto, #crediti-img-fitodepurazione-foto {
+    font-size: x-small;
+    color: rgb(160, 160, 160);
+    width: 50%;
+    height: 100%;
+    align-self: flex-end;
+}
+
+.contenuto-argini, .contenuto-fitodepurazione {
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2%;
+    align-items: center;
+    z-index: 10;
+}
+
+.argini:hover:not(.attivo),
+.fitodepurazione:hover:not(.attivo) {
+    background-color: #1f18c0;
+    color: #f7f7f7;
+    cursor: pointer;
+}
+
+.argini.attivo, .fitodepurazione.attivo {
+    background-color: #f7f7f7;
+    transition: background-color 0.2s;
+}
+
+.specie {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 7%;
+
+}
+
+.inline-gradient-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Puoi usare center o space-between se vuoi centrare o allargare */
+    gap: 12px; /* distanza tra i tre elementi */
+    margin-top: 1rem; /* o dove ti serve nel layout */
+  }
+  
+  .gradient-line {
+    height: 10px;
+    background: linear-gradient(to right, #e0e73f, #1f18c0); /* colori personalizzabili */
+    width: 150px;
+  }
+  
+  .etichetta-sx,
+  .etichetta-dx {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: small;
+    color: black;
+  }
+
+
+.grafico-specie {
+    position: relative;
+    width: 75%;
+    height: auto;
+    margin-left: 12.5%;
+    /* border: 1px solid black; */
+}
+
+#testo-grafico-specie {
+    position: relative;
+    color: gray;
+    width: 50%;
+    padding: 1%;
+    padding-bottom: 0%;
+}
+
+#crediti-grafico-specie {
+    font-size: x-small;
+    color: rgb(160, 160, 160);
+    padding-left: 1%;
+}
+
+.flourish-embed {
+    position: relative;
+}
+
+.absolute-gradient {
+    position: absolute;
+    top: 6%; /* regola la distanza dall’alto */
+    left: 1.5%; /* regola la posizione orizzontale */
+    z-index: 10; /* assicura che stia sopra al grafico */
+    background: transparent;
+  }
+
+
+.aree {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-bottom: 2.5%;
+    justify-content: space-between;
+}
+
+.testo-aree {
+    position: relative;
+    width: 50%;
+    padding: 1%;
+    padding-right: 2%;
+}
+
+.img-aree {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    padding-right: 1%;
+    gap: 20px;
+}
+
+.img-aree video {
+    width: 100%;
+    border: solid 1px black;
+    height: auto;
+    object-fit: cover;
+    background-color: none;
+}
+
+#esplora-mappa2 {
+    font-size: medium;
+    border: 1px solid black;
+    background-color: #1F18C0;
+    padding: 10px;
+    color: #f7f7f7;
+    cursor: pointer;
+}
+
+#esplora-mappa2:hover {
+    background-color: black;
+    color: #f7f7f7;
+}
+
+#grafico-metri {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 3%;
+    margin-bottom: 2.5%;
+}
+
+.biodiversita {
+    margin-top: 4%;
+    margin-bottom: 7%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.carosello-img {
+    width: 70%;
+    position: relative;
+}
+
+#info-img-nome {
+    font-size: medium;
+    border: 1px solid black;
+    background-color: #e0e73f;
+    padding: 5px 10px;
+    color: black;
+}
+
+#info-img-dati {
+    font-size: medium;
+}
+
+.testo-biodiversita {
+    width: 30%;
+    padding: 1%;
+    padding-right: 2%;
+}
+
+#avanti-carosello, #indietro-carosello {
+    position: relative;
+    height: 24px;
+    padding: 5px;
+    z-index: 10;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    border: solid 1px black;
+    transition: 0.2s;
+}
+
+.img-biodiversita {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.contenitore-immagini {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.preview-img {
+    position: relative;
+    top: 25%;
+    width: 25%;
+    height: 200px;
+    opacity: 0.6;
+    object-fit: cover;
+    z-index: 0;
+    border: solid 1px black;
+}
+
+.immagine-principale,
+.preview-img {
+    flex-shrink: 0;
+}
+
+.preview-img.sinistra {
+    transform: translateX(25%);
+    /* left: -25%; */
+}
+
+.preview-img.destra {
+    transform: translateX(-25%);
+    /* right: -25%; */
+}
+
+#immagine-principale-container {
+    width: 70%;
+}
+
+.immagine-principale {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    z-index: 50;
+    border: solid 1px black;
+    align-self: center;
+}
+
+.carosello-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    z-index: 51;
+    transform: translateY(-50%);
+}
+
+.carosello-btn-sinistra {
+    top: 40%; /* Centra il bottone verticalmente rispetto al contenitore */
+    left: 22.5%; /* Posiziona il bottone a sinistra del contenitore */
+}
+
+.carosello-btn-destra {
+    top: 40%; /* Centra il bottone verticalmente */
+    right: 22.5%; /* Posiziona il bottone a destra del contenitore */
+}
+
+
+.info-container-img {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.info-img {
+    font-size: medium;
+    width: 70%;
+}
+
+.crediti-testo {
+    font-size: x-small;
+    color: rgb(160, 160, 160);
+    width: 30%;
+    height: auto;
+    text-align: right;
+    margin-top: 1%;
+}
+
+#tooltip-img {
+    position: absolute;
+    display: none;
+    pointer-events: none;
+    background: #e0e73f;
+    border: 1px solid;
+    padding: 8px;
+    z-index: 9999;
+    width: 300px;
+    height: auto;
+    max-height: 450px;
+    font-family: sans-serif;
+  }
+
+  #tooltip-img img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom:2%;
+  }
+
+  #tooltip-img .info {
+    font-size: small;
+  }
+
+  #tooltip-img .info span {
+    display: block;
+    margin-bottom: 2%;
+  }
+
+
+
+.freccie-specie {
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-50%);
+    gap: 10px;
+    margin-top: 10px;
+    z-index: 70;
+}
+
+.freccie-specie button {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#preview-next-specie {
+    position: absolute;
+    width: 30%;
+    height: 150px;
+    left: 33%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#preview-next-specie img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+#avanti-specie {
+    position: absolute;
+    top:50%;
+    left:33%;
+    transform: translate(-50%, -50%);
+    height: 24px;
+    padding: 5px;
+    z-index: 10;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    border: solid 1px black;
+    transition: 0.2s;
+}
+
+#avanti-specie:hover {
+    background-color: rgb(31,24,192);
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f7;
+    position: relative;
+    flex-direction: row;
+}
+
+.loghi {
+    width: 30%;
+    margin-top: 2%;
+    padding-left: 1%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#acque-risorgive {
+    font-size: x-large;
+    background-color: #e0e73f;
+    border: 1px solid black;
+    color: #1F18C0;
+    padding: 4%;
+    width: 50%;
+}
+
+.loghi img {
+    width: 30%;
+    height: auto;
+}
+
+.contatti {
+    position: relative;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mail {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 3%;
+}
+
+#mail-testo, #numeri-testo {
+    width: 50%;
+}
+  
+.back-to-top {
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
+    border: solid 1px black;
+    background: #f7f7f7;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    padding: 1%;
+    rotate: 180deg;
+    transition: 0.2 ease;
+    cursor: pointer;
+}
+
+#titoletto-footer {
+    color: #1F18C0;
+    font-size: small;
+}
+
+#descr-footer {
+    color: black;
+    font-size: large;
+}
+  
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Tablet (fino a 1024px) */
+
+@media (max-width: 1024px) {
+
+    .bottoni-scroll {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap; /* <--- permette di andare a capo */
+        justify-content: flex-start;
+    }
+
+    #cosa-facciamo2,
+    #contattaci2 {
+        width: 50%; /* <--- affiancati */
+        height: auto;
+        border-right: none;
+        border-right: 1px solid black;
+        display: inline-block;
+        vertical-align: top;
+        border-bottom: none; /* <--- togli bordo a destra all'ultimo */
+        box-sizing: border-box;
+    }
+
+    #contattaci2 {
+        border-right: none; /* <--- togli bordo a destra all'ultimo */
+    }
+
+    .esplora-mappa {
+        width: 100%; /* <--- va sotto, largo come due sopra */
+        clear: both;
+        height: auto; /* oppure imposta un'altezza fissa */
+        z-index: 100;
+        border-top: 1px solid black;
+    }
+
+    .info-territorio {
+        margin-top:14%;
+    }
+
+    .tooltipinfotext {
+        font-size: x-small;
+    }
+
+    .lavori-principali {
+        margin-top: 5%;
+    }
+
+    .info-container-img {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    .info-img {
+        font-size: medium;
+        width: 100%;
+    }
+
+    .crediti-testo {
+        font-size: x-small;
+        color: rgb(160, 160, 160);
+        width: 100%;
+        height: auto;
+        text-align: left;
+        margin-top: 1%;
+    }
+
+    .lavori-principali {
+        width: 100%;
+        flex-direction: column;
+        height: auto !important;
+    }
+
+    .argini,
+    .fitodepurazione {
+        max-height: 125px; /* Stato chiuso */
+        transition: max-height 0.5s ease;
+    }
+
+    /* Stato aperto */
+    .lavori-principali .argini.attivo,
+    .lavori-principali .fitodepurazione.attivo {
+        max-height: 500px; /* Deve essere maggiore del contenuto massimo */
+    }
+
+    /* Fade dei contenuti */
+    #testo-argini,
+    #testo-fitodepurazione,
+    #crediti-img-argini,
+    #crediti-img-fitodepurazione {
+        opacity: 0;
+        pointer-events: none;
+        display: flex;
+    }
+
+    /* Contenuti visibili solo quando attivo */
+    .lavori-principali .argini.attivo #testo-argini,
+    .lavori-principali .fitodepurazione.attivo #testo-fitodepurazione,
+    .lavori-principali .argini.attivo #crediti-img-argini,
+    .lavori-principali .fitodepurazione.attivo #crediti-img-fitodepurazione {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .argini {
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    .img-info-consorzio {
+        position: relative;
+        width: 40%;
+        height: 200px;
+    }
+
+    .img-info-territorio {
+        position: relative;
+        width: 50%;
+        height: auto;
+    }
+
+    .testo-info-territorio {
+        width: 40%;
+    }
+
+    .immagine-principale {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        z-index: 50;
+        border: solid 1px black;
+        align-self: center;
+    }
+
+    .preview-img {
+        position: relative;
+        top: 25%;
+        width: 25%;
+        height: 160px;
+        opacity: 0.6;
+        object-fit: cover;
+        z-index: 0;
+        border: solid 1px black;
+    }
+
+    .specie {
+        margin-top: 3%;
+    }
+
+    .grandezza {
+        width: 25%;
+    }
+
+    .posizione {
+        width: 35%;
+    }
+
+    .testo-curiosita {
+        width: 40%;
+    }
+
+    .info-specie, #elenco-specie-reinserite {
+        gap: 20px
+    }
+
+    #img-specie-presente {
+        width: 45%;
+    }
+
+    #testo-specie-presente, #testo-specie-reinserite {
+        width: 40%;
+    }
+
+    #img-specie-reinserite img {
+        width: 80%;
+    }
+
+    #preview-next-specie img {
+        width: 100%;
+    }
+
+    .freccie-specie {
+        left:37%
+    }
+
+
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Mobile orizzontale */
+@media (max-width: 950px) {
+    .header-home {
+        font-size: small;
+        height: 13px;
+    }
+
+    .griglia {
+        margin-top: 34px;
+    }
+
+    .frase {
+        font-size: 30px;
+    }
+
+    .link {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        border-top: solid 1px black;
+    }
+
+    .bottoni-scroll {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #cosa-facciamo2, #contattaci2 {
+        position: relative;
+        width: 25%;
+        border-right: solid 1px black;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+        z-index: 10;
+    }
+
+    #cosa-facciamo2::before, #contattaci2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 99.8%;
+        height: 100%;
+        background-color: #1f18c0; /* colore che vuoi */
+        transform: scaleX(1) scaleY(0.02);  /* inizialmente largo 50%, alto 5% */
+        transform-origin: top left;  /* da dove parte la trasformazione */
+        transition: transform 0.5s ease;
+        border-right: solid 1px #1f18c0;
+        z-index: 0;
+    }
+
+    #contattaci2::before {
+        background-color: #e0e73f;
+        z-index: 0;
+        border-right: none;
+
+    }
+
+    #cosa-facciamo2.attivo::before {
+        transform: scaleX(1) scaleY(1); 
+    }
+
+    #contattaci2.attivo::before {
+        transform: scaleX(1) scaleY(1); 
+    }
+
+    #cosa-facciamo2 a, #contattaci2 a {
+        position: absolute;
+        color: black;
+        left: 2%;
+        top: 5%;
+        padding: 5px;
+        padding-right: 10px;
+        font-size: small;
+        transition: transform 0.5s ease;
+    }
+
+    #simbolo-paragrafo, #simbolo-paragrafo2 {
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        transform: scale(0.1) rotate(-45deg);
+        height: auto;
+        transform-origin: bottom right;
+        transition: transform 0.5s ease;
+    }
+
+    #simbolo-paragrafo.show, #simbolo-paragrafo2.show {
+        position: absolute;
+        transform: scale(0.2);
+        bottom: 15px;
+        right: 10px;
+        transition: transform 0.5s ease;
+    }
+
+    .esplora-mappa {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        cursor: pointer;
+        overflow: hidden; /* per tagliare l’immagine se esce */
+        background-color: black;
+        border: none;
+    }
+
+    .esplora-mappa a {
+        padding: 10px;
+        background-color: #1f18c0;
+        border: solid 1px black;
+        color: #f7f7f7;
+        font-size: x-small;
+        z-index: 10;
+        text-align: center;
+        transition: 0.2;
+        cursor: pointer;
+    }
+
+    .esplora-mappa img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;       /* riempi tutto il container */
+        height: 100%;      /* riempi tutto il container */
+        object-fit: cover; /* ridimensiona senza deformare */
+        z-index: 0;
+        opacity: 1;
+        pointer-events: none; /* per non interferire con i clic sul testo */
+        transition: transform 0.5s ease;
+        pointer-events: none;
+    }
+
+    #testo-bottoni-scroll {
+        font-size: small;
+    }
+
+    .info-consorzio {
+        font-size: small;
+    }
+
+    .riquadro {
+        font-size: large;
+        flex: 1 1 calc(33.33% - 20px); /* 3 per riga su mobile */
+    }
+
+    .info-territorio {
+        height: 225px;
+    }
+
+    .info-territorio .riquadro:nth-child(-n+3) {
+        margin-bottom: 75px; /* Spazio tra le due righe */
+        border-bottom: 1px solid black;
+    }
+
+    .info-territorio .riquadro:nth-child(3) {
+        border-right: none;
+    }
+
+    .info-territorio .riquadro:nth-child(n+4) {
+        border-top: 1px solid black;
+    }
+
+    #riquadro-testo {
+        font-size: x-small;
+    }
+
+    .tooltipinfotext {
+        font-size: x-small;
+    }
+
+    .attivita {
+        font-size: small;
+    }
+
+    .specie {
+        font-size: small;
+    }
+
+    .biodiversita {
+        font-size: small;
+        flex-direction: column;
+    }
+
+    .info-container-img {
+        font-size: xx-small;
+        margin-top: 2%;
+    }
+
+    .testo-biodiversita {
+        width: 70%;
+    }
+
+    .carosello-img {
+        width: 70%; /* o quello che vuoi */
+        margin: 20px auto 0 auto; /* centra orizzontalmente */
+    }
+
+    #info-img-nome, #info-img-dati {
+        font-size: small;
+    }
+
+    #acque-risorgive {
+        font-size: medium;
+    }
+
+    #titoletto-footer {
+        color: #1F18C0;
+        font-size: x-small;
+    }
+
+    #descr-footer {
+        color: black;
+        font-size: medium;
+    }
+
+    #return-button {
+        padding: 7px 10px;
+        font-size: x-small;
+    }
+
+    #mostra-video {
+        padding: 7px 10px;
+        font-size: x-small;
+    }
+
+    .map-overlay {
+        right: 3%;
+        top: 13%;
+        width: 450px;
+        white-space: wrap;
+    }
+
+    .titolo_overlay {
+        padding: 10px;
+        font-size: x-small;
+        margin-bottom: 3px;
+    }
+
+    .descrizione {
+        padding: 10px;
+        padding-bottom: 10px;
+        font-size: x-small;
+    }
+
+    .descr-item {
+        padding: 3px;
+        align-self: flex-start;
+    }
+
+    .more-button {
+        font-size: x-small;
+        padding:7px;
+    }
+
+    .av-in {
+        width: 450px;
+        margin-top: 3px;
+    }
+
+    .overlay-content {
+        font-size: x-small;
+        overflow-x: hidden;
+    }
+
+    .titoletto {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    #close-overlay {
+        margin-top: 6px;
+        margin-right: 10px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .descrizione-area {
+        width: 70%;
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+
+    .grandezza {
+        width: 20%;
+    }
+
+    .posizione {
+        width: 40%;
+    }
+
+    .testo-curiosita {
+        width: 40%;
+    }
+
+    #satellite-button, #flora-button, #acqua-button {
+        padding: 7px 10px;
+        font-size: x-small;
+    }
+
+    .image-container {
+        height: 300px;
+    }
+
+    .areatempo1 p,
+    .areatempo2 p,
+    .areatempo3 p,
+    .areatempo4 p {
+        font-size: medium;
+    }
+
+    .curiosita {
+        margin-top: 2%;
+        font-size: x-small;
+        margin-bottom: 9%;
+    }
+
+    .specie-area {
+        margin-bottom: 10%;
+    }
+
+    #specie-presente, #specie-reinserite, #osservazioni-area {
+        font-size: x-small;
+        padding: 7px 10px;
+    }
+
+    #img-specie-presente, #img-specie-reinserite {
+        height: 175px;
+    }
+
+    #preview-next-specie {
+        height: 100px;
+    }
+
+    #tooltip-img {
+        width: 150px;
+        height: auto;
+        max-height: 350px;
+        font-family: sans-serif;
+    }
+
+    #tooltip-img img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+        margin-bottom: 2%;
+    }
+
+    #tooltip-img .info {
+        font-size: xx-small;
+    }
+
+    #tooltip-img .info span {
+        display: block;
+        margin-bottom: 2%;
+    }
+
+    .crediti-inat {
+        width: 40%;
+        top: 0;
+        font-size: xx-small;
+    }
+
+    .immagine-principale {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        z-index: 50;
+        border: solid 1px black;
+        align-self: center;
+    }
+
+    .preview-img {
+        position: relative;
+        top: 20%;
+        width: 20%;
+        height: 120px;
+        opacity: 0.6;
+        object-fit: cover;
+        z-index: 0;
+        border: solid 1px black;
+    }
+
+    .carosello-btn {
+        position: absolute;
+        background: none;
+        border: none;
+        font-size: large;
+        cursor: pointer;
+        z-index: 51;
+        transform: translateY(-50%);
+    }
+
+    .carosello-btn-sinistra {
+        top: 33%; /* Centra il bottone verticalmente rispetto al contenitore */
+        left: 17%; /* Posiziona il bottone a sinistra del contenitore */
+    }
+
+    .carosello-btn-destra {
+        top: 33%; /* Centra il bottone verticalmente */
+        right: 17%; /* Posiziona il bottone a destra del contenitore */
+    }
+
+    #crediti-testo-biodiversita {
+        width: 70%;
+    }
+
+    .inline-gradient-text {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Puoi usare center o space-between se vuoi centrare o allargare */
+        gap: 3; /* distanza tra i tre elementi */
+        margin-top: 1.3rem; /* o dove ti serve nel layout */
+        margin-left: 0.3rem; /* o dove ti serve nel layout */
+    }
+    
+    .gradient-line {
+        height: 10px;
+        background: linear-gradient(to right, #e0e73f, #1f18c0); /* colori personalizzabili */
+        width: 50px;
+    }
+    
+    .etichetta-sx,
+    .etichetta-dx {
+        font-size: xx-small;
+    }
+
+    .back-to-top {
+        width: 24px;
+        height: 24px;
+        padding: 10px;
+    }
+
+    .map-container {
+        margin-top: 35px
+    }
+
+    #mostra-tutto-btn {
+        border-radius: none;
+        background-color: #1f18c0;
+        color: #f7f7f7;
+        border: 1px solid black;
+    }
+
+    #btn-specie {
+        border-radius: none;
+        background-color: transparent;
+        color: black;
+        border: 1px solid black;
+    }
+
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Mobile (fino a 768px) */
+@media (max-width: 768px) {
+
+    #consorzio {
+        padding-left: 2%;
+    }
+
+    #consorzio2 {
+        padding-right: 2%;
+    }
+
+    
+    .bottoni-scroll {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap; /* <--- permette di andare a capo */
+        justify-content: flex-start;
+    }
+
+    #cosa-facciamo2,
+    #contattaci2 {
+        width: 50%; /* <--- affiancati */
+        height: auto;
+        border-right: none;
+        border-right: 1px solid black;
+        display: inline-block;
+        vertical-align: top;
+        border-bottom: none; /* <--- togli bordo a destra all'ultimo */
+        box-sizing: border-box;
+    }
+
+    #contattaci2 {
+        border-right: none; /* <--- togli bordo a destra all'ultimo */
+    }
+
+    .esplora-mappa {
+        width: 100%; /* <--- va sotto, largo come due sopra */
+        clear: both;
+        height: auto; /* oppure imposta un'altezza fissa */
+        z-index: 100;
+        border-top: 1px solid black;
+    }
+
+    .info-consorzio {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .testo-info-consorzio {
+        width: 90%;
+        padding-left: 3%;
+    }
+
+    .img-info-consorzio {
+        margin-top: 10%;
+        margin-bottom: 2%;
+        width: 94%;
+        padding-left: 3%;
+    }
+
+    .info-territorio {
+        margin-top: 23%;
+    }
+
+    .testo-info-territorio {
+        width: 90%;
+        padding-left: 3%;
+    }
+
+    .img-info-territorio {
+        margin-top: 10%;
+        margin-bottom: 2%;
+        width: 94%;
+        padding-left: 3%;
+    }
+
+    .attivita {
+        margin-top: 20%;
+    }
+
+    .frase-attivita {
+        width: 90%;
+        padding-left: 3%;
+    }
+
+    .lavori-principali {
+        margin-top: 10%;
+    }
+
+    .contenuto-argini, .contenuto-fitodepurazione {
+        padding-left: 3%;
+    }
+
+    #freccia-argini, #freccia-fitodepurazione {
+        padding-right: 6%;
+    }
+
+    #testo-argini, #testo-fitodepurazione {
+        width: 90%;
+        padding-left: 3%;
+    }
+
+    .lavori-principali .argini.attivo,
+    .lavori-principali .fitodepurazione.attivo {
+        max-height: 1000px; /* Deve essere maggiore del contenuto massimo */
+    }
+
+    #crediti-img-argini, #crediti-img-fitodepurazione {
+        flex-direction: column;
+        padding-left: 3%;
+        width: 94%;
+        margin-bottom: 3%;
+    }
+
+    #crediti-img-argini-foto, #crediti-img-fitodepurazione-foto {
+        font-size: x-small;
+        color: rgb(160, 160, 160);
+        width: 100%;
+        height: 100%;
+        align-self: flex-start;
+    }
+
+    #crediti-img-argini-foto img, #crediti-img-fitodepurazione-foto img {
+        margin-top: 2%;
+    }
+
+    .crediti-testo {
+        margin-bottom: 2%;
+    }
+
+    .grafico-specie {
+        width: 94%;
+        margin-left: 3%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .grafico-embed {
+        margin-top: 5%;
+    }
+
+    #testo-grafico-specie {
+        width: 90%;
+    }
+
+    .inline-gradient-text {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Puoi usare center o space-between se vuoi centrare o allargare */
+        gap: 5; /* distanza tra i tre elementi */
+        margin-top: 1.1rem; /* o dove ti serve nel layout */
+        margin-left: 0.3rem; /* o dove ti serve nel layout */
+    }
+
+    #crediti-grafico-specie {
+        font-size: x-small;
+        color: rgb(160, 160, 160);
+        padding-left: 1%;
+        margin-top: 1%;
+    }
+
+    .biodiversita {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .testo-biodiversita {
+        width: 90%;
+        padding-left: 3%;
+        padding-right: 0%;
+    }
+
+    .carosello-img {
+        width: 100%; /* o quello che vuoi */
+        margin: 20px auto 0 auto; /* centra orizzontalmente */
+    }
+
+    .info-container-img {
+        width: 120%;
+    }
+
+    #info-img-nome, #info-img-dati {
+        font-size: xx-small;
+    }
+
+    .carosello-btn-sinistra {
+        left: 15%; /* Posiziona il bottone a sinistra del contenitore */
+    }
+
+    .carosello-btn-destra {
+        right: 15%; /* Posiziona il bottone a destra del contenitore */
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .loghi {
+        width: 80%;
+        flex-direction: column;
+        padding-left: 3%;
+    }
+
+    #logo-anbi {
+        width: 30%;
+        height: auto;
+    }
+
+    #acque-risorgive {
+        padding: 2%;
+        font-size: small;
+        width: 50%;
+    }
+
+    .contatti {
+        padding-left: 3%;
+    }
+
+    .mail {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+
+    #mail-testo {
+        width: 100%;
+    }
+
+    #numeri-testo {
+        margin-top: 6%;
+    }
+
+    #titoletto-footer {
+        color: #1F18C0;
+        font-size: x-small;
+    }
+
+    #descr-footer {
+        color: black;
+        font-size: small;
+    }
+
+    .back-to-top {
+        bottom: 6%;
+        right: 3%;
+    }
+
+    #menu {
+        top: 2%;
+
+    }
+
+    .map-overlay {
+        top: 6%;
+        width: 94%;
+    }
+
+    .av-in {
+        width: 100%;
+    }
+
+    .extra-overlay {
+        top:6%;
+
+    }
+
+    .descrizione-area {
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    .image-container {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .areatempo1,
+    .areatempo2,
+    .areatempo3,
+    .areatempo4 {
+        width: 50%;              /* 2 per riga */
+        height: 270px;           /* altezza dimezzata */
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .areatempo2,
+    .areatempo4 {
+        border-right: none;      /* niente bordo a destra sugli elementi di destra */
+    }
+
+    .areatempo3,
+    .areatempo4 {
+        border-bottom: none;     /* niente bordo in basso sull’ultima riga */
+    }
+
+    .areatempo1 p,
+    .areatempo2 p,
+    .areatempo3 p,
+    .areatempo4 p {
+        font-size: medium;
+    }
+
+    .curiosita {
+        margin-top: 10%;
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .grandezza, .posizione, .testo-curiosita {
+        width: 90%;
+    }
+
+    .specie-area {
+        flex-direction: column;
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
+
+    .specie-presente, .specie-reinserite {
+        width: 90%;
+    }
+
+    .specie-reinserite {
+        margin-top: 10%;
+    }
+
+    .info-specie {
+        gap: 5%;
+    }
+
+    #elenco-specie-reinserite {
+        flex-direction: column;
+        gap:10px
+    }
+
+    #img-specie-presente {
+        width: 45%;
+    }
+
+    #img-specie-reinserite img {
+        width: 90%;
+    }
+
+    #preview-next-specie {
+        left: 50%;
+        top: 88px;
+    }
+
+    .freccie-specie {
+        top: 108px;
+        left: 45%
+    }
+
+    #testo-specie-reinserite {
+        width: 100%;
+    }
+
+    #box-immagini {
+        width: 100%;
+        max-height: none;
+        overflow-y: auto;
+        padding: 12px;
+        margin-left: -2.5%;
+    }
+
+    .crediti-inat {
+        width: 90%;
+        position: relative;
+        margin-top: 5%;
+        padding-left: 1%;
+    }
+
+
+
+
+}
+
+
+
