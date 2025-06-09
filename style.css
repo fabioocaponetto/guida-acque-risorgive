@@ -2,7 +2,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100dvh;
+    height: 100svh;
     width: 100%;
     font-family: 'Archivo', sans-serif;
     background-color: #f7f7f7;
@@ -12,7 +12,7 @@ html, body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    height: 100dvh;
+    height: 100svh;
     width: 100%;
 }
 
@@ -322,7 +322,7 @@ hr {
     display: none;
     position: absolute;
     right: 3%;
-    top: 10%;
+    top: 75px;
     width: 500px;
     white-space: wrap;
 }
@@ -382,7 +382,7 @@ hr {
     justify-content: space-between;
     flex-direction: row;
     position: absolute;
-    top: 5%;
+    top: 30px;
     right: 3%;
     z-index: 1;
     gap: 10px;
@@ -746,7 +746,7 @@ img[id^="areatempo"] {
 
 .extra-overlay {
     position: absolute;
-    top: 5%;
+    top: 30px;
     right: 3%;
     width: 94%;
     height: 94.85%;
@@ -824,6 +824,7 @@ img[id^="areatempo"] {
 #info-consorzio1 {
     margin-bottom: 5%;
 }
+
 
 .img-info-consorzio {
     position: relative;
@@ -1048,8 +1049,9 @@ img[id^="areatempo"] {
 .square1, .square2, .square3 {
     width: 20px;
     height: 20px;
-    margin-top: 50vh;
+    margin-top: 45vh;
     background-color: #1f18c0;
+    transform: translateY(-50%);
     transition: background-color 0.5s ease;
     padding: 10px;
 }
@@ -2027,11 +2029,19 @@ img[id^="areatempo"] {
         font-size: x-small;
     }
 
+    #menu {
+        top:10px;
+    }
+
     .map-overlay {
         right: 3%;
-        top: 13%;
-        width: 450px;
+        top: 40px;
+        width: 400px;
         white-space: wrap;
+    }
+
+    .extra-overlay {
+        top:10px;
     }
 
     .titolo_overlay {
@@ -2057,7 +2067,7 @@ img[id^="areatempo"] {
     }
 
     .av-in {
-        width: 450px;
+        width: 400px;
         margin-top: 3px;
     }
 
@@ -2264,10 +2274,15 @@ img[id^="areatempo"] {
 
     #consorzio {
         padding-left: 2%;
+
     }
 
     #consorzio2 {
         padding-right: 2%;
+    }
+
+    .frase a {
+        left:3%
     }
 
     
@@ -2309,6 +2324,10 @@ img[id^="areatempo"] {
         margin-top: 10%;
     }
 
+    #info-consorzio1 {
+        margin-bottom: 15%;
+    }
+
     .testo-info-consorzio {
         width: 90%;
         padding-left: 3%;
@@ -2328,6 +2347,10 @@ img[id^="areatempo"] {
     .testo-info-territorio {
         width: 90%;
         padding-left: 3%;
+    }
+
+    .tooltipinfotext {
+        font-size: xx-small;
     }
 
     .img-info-territorio {
@@ -2411,7 +2434,7 @@ img[id^="areatempo"] {
         align-items: center;
         justify-content: flex-start; /* Puoi usare center o space-between se vuoi centrare o allargare */
         gap: 5; /* distanza tra i tre elementi */
-        margin-top: 1.1rem; /* o dove ti serve nel layout */
+        margin-top: 0.7rem; /* o dove ti serve nel layout */
         margin-left: 0.3rem; /* o dove ti serve nel layout */
     }
 
@@ -2509,12 +2532,12 @@ img[id^="areatempo"] {
     }
 
     #menu {
-        top: 2%;
+        top: 15px;
 
     }
 
     .map-overlay {
-        top: 6%;
+        top: 47px;
         width: 94%;
     }
 
@@ -2523,7 +2546,7 @@ img[id^="areatempo"] {
     }
 
     .extra-overlay {
-        top:6%;
+        top: 15px;;
 
     }
 
@@ -2634,11 +2657,17 @@ img[id^="areatempo"] {
         margin-top: 5%;
         padding-left: 1%;
     }
-
-
-
-
 }
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Mobile (fino a 768px) */
+@media (max-width: 361px) {
+    .descr-item, .descrizione-area, .curiosita, #testo-specie-presente, #testo-specie-reinserite, #riquadro-testo {
+        font-size: xx-small;
+    }
+}
+
 
 
 
