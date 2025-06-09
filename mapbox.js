@@ -1,3 +1,242 @@
+const imagesToPreload = [
+    "videos/video_ottolenghi.mp4",
+    "videos/video_franca.mp4",
+    "videos/video_zero.mp4",
+    "videos/video_pionca.mp4",
+    "videos/video_riobianchi.mp4",
+    "videos/video_gaggio_nord.mp4",
+    "videos/video_zeretto.mp4",
+    "videos/video_noale.mp4",
+    "videos/video_pojan.mp4",
+    "videos/video_nicolas.mp4",
+    "videos/video_comunetto.mp4",
+    "videos/video_onara.mp4",
+    "videos/video_rusteghin.mp4",
+    "videos/video_draganziolo.mp4",
+    "videos/video_lycena.mp4",
+    "img/img_tot/comunetto 4.webp",
+    "img/img_tot/draganziolo 1 flora.webp",
+    "img/img_tot/zeretto 4 flora.webp",
+    "img/img_tot/ottolenghi 2 flora.webp",
+    "img/img_tot/nicolas 2 acqua.webp",
+    "img/img_tot/rusteghin 1 flora.webp",
+    "img/img_tot/draganziolo 2 acqua.webp",
+    "img/img_tot/ottolenghi 1 acqua.webp",
+    "img/img_tot/nicolas 1 flora.webp",
+    "img/img_tot/pojan 3 acqua.webp",
+    "img/img_tot/noale 3 acqua.webp",
+    "img/img_tot/lycena 3 acqua.webp",
+    "img/img_tot/riobianchi 3 flora.webp",
+    "img/img_tot/riobianchi 3.webp",
+    "img/img_tot/gaggio_nord 4 acqua.webp",
+    "img/img_tot/gaggio_nord 1.webp",
+    "img/img_tot/onara 4.webp",
+    "img/img_tot/rusteghin 2 acqua.webp",
+    "img/img_tot/comunetto 3 flora.webp",
+    "img/img_tot/nicolas 4 flora.webp",
+    "img/img_tot/draganziolo 1.webp",
+    "img/img_tot/pionca 4.webp",
+    "img/img_tot/ottolenghi 4 acqua.webp",
+    "img/img_tot/zeretto 2 acqua.webp",
+    "img/img_tot/pionca 3 flora.webp",
+    "img/img_tot/riobianchi 2.webp",
+    "img/img_tot/zero 4.webp",
+    "img/img_tot/onara 2 flora.webp",
+    "img/img_tot/gaggio_nord 1 acqua.webp",
+    "img/img_tot/zeretto 1 flora.webp",
+    "img/img_tot/draganziolo 4 flora.webp",
+    "img/img_tot/zero 3 acqua.webp",
+    "img/img_tot/rusteghin 4 flora.webp",
+    "img/img_tot/onara 1 acqua.webp",
+    "img/img_tot/gaggio_nord 2 flora.webp",
+    "img/img_tot/zeretto 1.webp",
+    "img/img_tot/lycena 4.webp",
+    "img/img_tot/lycena 2 flora.webp",
+    "img/img_tot/noale 2 flora.webp",
+    "img/img_tot/rusteghin 1.webp",
+    "img/img_tot/riobianchi 2 acqua.webp",
+    "img/img_tot/noale 1.webp",
+    "img/img_tot/comunetto 2 acqua.webp",
+    "img/img_tot/rusteghin 3 flora.webp",
+    "img/img_tot/pojan 1.webp",
+    "img/img_tot/draganziolo 3 flora.webp",
+    "img/img_tot/zero 3.webp",
+    "img/img_tot/zero 4 acqua.webp",
+    "img/img_tot/pojan 2 flora.webp",
+    "img/img_tot/onara 2.webp",
+    "img/img_tot/nicolas 1.webp",
+    "img/img_tot/pionca 3.webp",
+    "img/img_tot/lycena 1 acqua.webp",
+    "img/img_tot/lycena 3.webp",
+    "img/img_tot/noale 1 acqua.webp",
+    "img/img_tot/comunetto 2.webp",
+    "img/img_tot/riobianchi 1 flora.webp",
+    "img/img_tot/comunetto 1 flora.webp",
+    "img/img_tot/ottolenghi 3 acqua.webp",
+    "img/img_tot/nicolas 3 flora.webp",
+    "img/img_tot/pojan 1 acqua.webp",
+    "img/img_tot/pionca 4 flora.webp",
+    "img/img_tot/ottolenghi 1.webp",
+    "img/img_tot/comunetto 4 flora.webp",
+    "img/img_tot/riobianchi 4 flora.webp",
+    "img/img_tot/noale 4 acqua.webp",
+    "img/img_tot/lycena 4 acqua.webp",
+    "img/img_tot/gaggio_nord 3 acqua.webp",
+    "img/img_tot/pionca 1 flora.webp",
+    "img/img_tot/pojan 4 acqua.webp",
+    "img/img_tot/zero 2 flora.webp",
+    "img/img_tot/comunetto 3.webp",
+    "img/img_tot/lycena 2.webp",
+    "img/img_tot/onara 3 acqua.webp",
+    "img/img_tot/pionca 2.webp",
+    "img/img_tot/onara 3.webp",
+    "img/img_tot/riobianchi 4.webp",
+    "img/img_tot/zero 2.webp",
+    "img/img_tot/pionca 2 acqua.webp",
+    "img/img_tot/zeretto 3 flora.webp",
+    "img/img_tot/zero 1 acqua.webp",
+    "img/img_tot/draganziolo 4.webp",
+    "img/img_tot/pionca 1.webp",
+    "img/img_tot/zero 1 flora.webp",
+    "img/img_tot/nicolas 3.webp",
+    "img/img_tot/zero 1.webp",
+    "img/img_tot/pionca 2 flora.webp",
+    "img/img_tot/zeretto 3 acqua.webp",
+    "img/img_tot/pojan 3.webp",
+    "img/img_tot/noale 3.webp",
+    "img/img_tot/rusteghin 3.webp",
+    "img/img_tot/onara 3 flora.webp",
+    "img/img_tot/ottolenghi 3.webp",
+    "img/img_tot/zero 2 acqua.webp",
+    "img/img_tot/pionca 1 acqua.webp",
+    "img/img_tot/pojan 4 flora.webp",
+    "img/img_tot/gaggio_nord 3 flora.webp",
+    "img/img_tot/riobianchi 4 acqua.webp",
+    "img/img_tot/lycena 4 flora.webp",
+    "img/img_tot/noale 4 flora.webp",
+    "img/img_tot/comunetto 4 acqua.webp",
+    "img/img_tot/lycena 1.webp",
+    "img/img_tot/zeretto 4.webp",
+    "img/img_tot/comunetto 1.webp",
+    "img/img_tot/pojan 1 flora.webp",
+    "img/img_tot/pionca 4 acqua.webp",
+    "img/img_tot/ottolenghi 3 flora.webp",
+    "img/img_tot/nicolas 3 acqua.webp",
+    "img/img_tot/comunetto 1 acqua.webp",
+    "img/img_tot/noale 1 flora.webp",
+    "img/img_tot/lycena 1 flora.webp",
+    "img/img_tot/riobianchi 1 acqua.webp",
+    "img/img_tot/ottolenghi 2.webp",
+    "img/img_tot/rusteghin 2.webp",
+    "img/img_tot/pojan 2 acqua.webp",
+    "img/img_tot/noale 2.webp",
+    "img/img_tot/zero 4 flora.webp",
+    "img/img_tot/pojan 2.webp",
+    "img/img_tot/draganziolo 3 acqua.webp",
+    "img/img_tot/rusteghin 3 acqua.webp",
+    "img/img_tot/comunetto 2 flora.webp",
+    "img/img_tot/noale 2 acqua.webp",
+    "img/img_tot/gaggio_nord 4.webp",
+    "img/img_tot/lycena 2 acqua.webp",
+    "img/img_tot/onara 1.webp",
+    "img/img_tot/riobianchi 2 flora.webp",
+    "img/img_tot/nicolas 2.webp",
+    "img/img_tot/gaggio_nord 2 acqua.webp",
+    "img/img_tot/rusteghin 4 acqua.webp",
+    "img/img_tot/onara 1 flora.webp",
+    "img/img_tot/zero 3 flora.webp",
+    "img/img_tot/draganziolo 4 acqua.webp",
+    "img/img_tot/zeretto 1 acqua.webp",
+    "img/img_tot/zeretto 2.webp",
+    "img/img_tot/gaggio_nord 1 flora.webp",
+    "img/img_tot/draganziolo 2.webp",
+    "img/img_tot/gaggio_nord 3.webp",
+    "img/img_tot/onara 2 acqua.webp",
+    "img/img_tot/riobianchi 1.webp",
+    "img/img_tot/zeretto 2 flora.webp",
+    "img/img_tot/pionca 3 acqua.webp",
+    "img/img_tot/nicolas 4 acqua.webp",
+    "img/img_tot/ottolenghi 4 flora.webp",
+    "img/img_tot/comunetto 3 acqua.webp",
+    "img/img_tot/rusteghin 2 flora.webp",
+    "img/img_tot/rusteghin 4.webp",
+    "img/img_tot/noale 4.webp",
+    "img/img_tot/gaggio_nord 4 flora.webp",
+    "img/img_tot/lycena 3 flora.webp",
+    "img/img_tot/pojan 4.webp",
+    "img/img_tot/noale 3 flora.webp",
+    "img/img_tot/riobianchi 3 acqua.webp",
+    "img/img_tot/pojan 3 flora.webp",
+    "img/img_tot/ottolenghi 1 flora.webp",
+    "img/img_tot/nicolas 1 acqua.webp",
+    "img/img_tot/gaggio_nord 2.webp",
+    "img/img_tot/draganziolo 2 flora.webp",
+    "img/img_tot/nicolas 4.webp",
+    "img/img_tot/draganziolo 3.webp",
+    "img/img_tot/zeretto 3.webp",
+    "img/img_tot/onara 4 flora.webp",
+    "img/img_tot/rusteghin 1 acqua.webp",
+    "img/img_tot/ottolenghi 2 acqua.webp",
+    "img/img_tot/nicolas 2 flora.webp",
+    "img/img_tot/zeretto 4 acqua.webp",
+    "img/img_tot/ottolenghi 4.webp",
+    "img/img_tot/draganziolo 1 acqua.webp",
+    "img/close_bianco.svg",
+    "img/rett_hover.webp",
+    "img/freccia giu gialla.svg",
+    "img/freccia giu bianca.svg",
+    "img/freccia avanti bianca.svg",
+    "img/rett.webp",
+    "img/freccia avanti blu.svg",
+    "img/freccia giu nera.svg",
+    "img/freccia indietro bianca.svg",
+    "img/freccia giu blu.svg",
+    "img/freccia indietro blu.svg",
+    "img/freccia giu.svg",
+    "img/close_nero.svg",
+];
+
+const imagePaths = imagesToPreload.filter(path => !path.endsWith('.mp4'));
+const videoPaths = imagesToPreload.filter(path => path.endsWith('.mp4'));
+
+function preloadImages(imagePaths) {
+  const promises = imagePaths.map(src => {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => resolve(src);
+      img.onerror = () => reject(src);
+      img.src = src;
+    });
+  });
+
+  return Promise.all(promises);
+}
+
+function preloadVideos(videoPaths) {
+  const promises = videoPaths.map(src => {
+    return new Promise((resolve, reject) => {
+      const video = document.createElement('video');
+      video.preload = 'auto';
+      video.src = src;
+      video.onloadeddata = () => resolve(src);
+      video.onerror = () => reject(src);
+    });
+  });
+
+  return Promise.all(promises);
+}
+
+Promise.all([
+  preloadImages(imagePaths),
+  preloadVideos(videoPaths)
+])
+  .then(() => {
+    console.log("✅ Tutte le risorse (immagini e video) sono state caricate.");
+  })
+  .catch((err) => {
+    console.warn("⚠️ Alcune risorse non sono state caricate:", err);
+  });
+
 
 //--------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -10,19 +249,19 @@ setTimeout(() => {
     squares1.style.backgroundColor = '#e0e73f';
     squares2.style.backgroundColor = '#1f18c0';
     squares3.style.backgroundColor = '#1f18c0';
-}, 300);
+}, 500);
 
 setTimeout(() => {
     squares1.style.backgroundColor = '#e0e73f';
     squares2.style.backgroundColor = '#e0e73f';
     squares3.style.backgroundColor = '#1f18c0';
-}, 600);
+}, 1000);
 
 setTimeout(() => {
     squares1.style.backgroundColor = '#e0e73f';
     squares2.style.backgroundColor = '#e0e73f';
     squares3.style.backgroundColor = '#e0e73f';
-}, 900);
+}, 1500);
 
 // Nascondi loader dopo 3.5 secondi
 setTimeout(() => {
@@ -31,8 +270,8 @@ setTimeout(() => {
     loader.style.transition = 'opacity 0.5s ease';
     setTimeout(() => {
         loader.style.display = 'none';
-    }, 300);
-}, 1200);
+    }, 500);
+}, 2000);
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZmFiaW9vY2Fwb25ldHRvIiwiYSI6ImNtOTFqNDAyeTAxNXgybnNmamw2NHZrbHAifQ.sKY-OeZ4eijHVkdjgg1vYQ';
 
@@ -113,16 +352,16 @@ const showCard = (feature) => {
                     </div>
                     <div class="image-container">
                         <div class="areatempo1"><p><code>${feature.properties.anno.split(',')[0].trim()}</code></p>
-                            <img src="img/img_tot/${nomebreveArea} 1.png" id="areatempo1">
+                            <img src="img/img_tot/${nomebreveArea} 1.webp" id="areatempo1">
                         </div>
                         <div class="areatempo2"><p><code>${feature.properties.anno.split(',')[1].trim()}</code></p>
-                            <img src="img/img_tot/${nomebreveArea} 2.png" id="areatempo2">
+                            <img src="img/img_tot/${nomebreveArea} 2.webp" id="areatempo2">
                         </div>
                         <div class="areatempo3"><p><code>${feature.properties.anno.split(',')[2].trim()}</code></p>
-                            <img src="img/img_tot/${nomebreveArea} 3.png" id="areatempo3">
+                            <img src="img/img_tot/${nomebreveArea} 3.webp" id="areatempo3">
                         </div>
                         <div class="areatempo4"><p><code>${feature.properties.anno.split(',')[3].trim()}</code></p>
-                            <img src="img/img_tot/${nomebreveArea} 4.png" id="areatempo4">
+                            <img src="img/img_tot/${nomebreveArea} 4.webp" id="areatempo4">
                         </div>
                     </div>
                     <div class="crediti-sat">
@@ -240,6 +479,9 @@ const showCard = (feature) => {
                     mostraSpecie(currentIndex);
                 
                     overlay.querySelector('#avanti-specie').addEventListener('click', () => {
+                        document.querySelector('#avanti-specie').style.backgroundColor = '#f7f7f7';
+                        document.querySelector('#avanti-specie').setAttribute("src","img/freccia avanti blu.svg");
+
                         currentIndex = (currentIndex + 1) % specieTrovate.length;
                         mostraSpecie(currentIndex);
                     });
@@ -340,6 +582,7 @@ const showCard = (feature) => {
                     mostraTuttoBtn.addEventListener('click', () => {
                         document.querySelectorAll('#box-immagini img').forEach(img => {
                             img.style.opacity = '1';
+                            img.style.pointerEvents = 'all';
                         });
 
                         // Evidenzia il bottone "Mostra tutti"
@@ -449,12 +692,6 @@ const showCard = (feature) => {
 
 
                     return;
-                    //metti tanti bottoni quanto il numeroClassi e scrive nome_classe(quantità)
-                    //metti un bottone che le mostra tutte
-                    //metti tutte le foto in griglia una accanto all'altra all'interno del container, ogni foto deve avere grandezza 60x60px
-                    //quando clicco su uno dei bottoni mi fa vedere solo le specie selezionate, le altre me le opacizza
-                    //quando clicco su mostra tutto me le torna a far vedere tutte
-                    //non andare avanti nella funzione
                 }
 
                 Object.entries(groups).forEach(([classe, images], index, array) => {
@@ -600,7 +837,7 @@ const showCard = (feature) => {
             // Funzione per aggiornare immagini
             function aggiornaImmagini(suffix = '') {
                 aree.forEach(i => {
-                    document.querySelector(`#areatempo${i}`).setAttribute("src", `img/img_tot/${nomebreveArea} ${i}${suffix}.png`);
+                    document.querySelector(`#areatempo${i}`).setAttribute("src", `img/img_tot/${nomebreveArea} ${i}${suffix}.webp`);
                 });
             }
 
@@ -688,6 +925,8 @@ const showCard = (feature) => {
         });
 
         avantiBtn.addEventListener('click', () => {
+            avantiBtn.src = "img/freccia avanti blu.svg";
+
             map.setFilter('places', null);
 
             if (allFeatures.length === 0) return;
@@ -711,6 +950,8 @@ const showCard = (feature) => {
         });
 
         indietroBtn.addEventListener('click', () => {
+            indietroBtn.src = "img/freccia indietro blu.svg";
+
             //ripristina la presenza di tutti i places
             map.setFilter('places', null);
 
@@ -905,12 +1146,12 @@ const showCard = (feature) => {
 //--------------------------------------------------------------------------------------------------------------------------------------------
 
 
-map.loadImage('img/rett.png', (error, image) => {
+map.loadImage('img/rett.webp', (error, image) => {
     if (error) throw error;
     map.addImage('square-icon', image);
 });
 
-map.loadImage('img/rett_hover.png', (error, image) => {
+map.loadImage('img/rett_hover.webp', (error, image) => {
     if (error) throw error;
     map.addImage('square-icon-hover', image);
 });
@@ -1277,6 +1518,8 @@ document.getElementById('mostra-video').addEventListener('click', () => {
             });
 
             map.on('click', `${sourceId}-hover-area`, (e) => {
+                map.getCanvas().style.cursor = '';
+                tooltip.remove();
 
                 //ripristina la presenza di tutti i places
                 map.setFilter('places', null);
