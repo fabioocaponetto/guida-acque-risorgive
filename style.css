@@ -459,10 +459,6 @@ hr {
     transition: 0.2s;
 }
 
-#avanti:hover, #indietro:hover {
-    background-color: rgb(31,24,192);
-}
-
 .av-in {
     display: flex;
     width: 500px;
