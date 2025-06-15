@@ -674,7 +674,6 @@ const showCard = (feature) => {
                             tooltip.style.left = `${left}px`;
                             tooltip.style.top = `${top}px`;
 
-                            // 🔽 Aggiungi questo solo una volta
                             if (!tooltip.dataset.listener) {
                                 document.addEventListener('click', (e) => {
                                     if (!tooltip.contains(e.target)) {
@@ -919,13 +918,16 @@ const showCard = (feature) => {
     if (avantiBtn) {
         avantiBtn.addEventListener("mouseenter", () => {
             avantiBtn.src = "img/freccia avanti bianca.svg";
+            avantiBtn.style.backgroundColor = "#1f18c0";
         });
         avantiBtn.addEventListener("mouseleave", () => {
             avantiBtn.src = "img/freccia avanti blu.svg";
+            avantiBtn.style.backgroundColor = "#f7f7f7";
         });
 
         avantiBtn.addEventListener('click', () => {
             avantiBtn.src = "img/freccia avanti blu.svg";
+            avantiBtn.style.backgroundColor = "#f7f7f7";
 
             map.setFilter('places', null);
 
@@ -944,13 +946,16 @@ const showCard = (feature) => {
     if (indietroBtn) {
         indietroBtn.addEventListener("mouseenter", () => {
             indietroBtn.src = "img/freccia indietro bianca.svg";
+            indietroBtn.style.backgroundColor = "#1f18c0";
         });
         indietroBtn.addEventListener("mouseleave", () => {
             indietroBtn.src = "img/freccia indietro blu.svg";
+            indietroBtn.style.backgroundColor = "#f7f7f7";
         });
 
         indietroBtn.addEventListener('click', () => {
             indietroBtn.src = "img/freccia indietro blu.svg";
+            indietroBtn.style.backgroundColor = "#f7f7f7";
 
             //ripristina la presenza di tutti i places
             map.setFilter('places', null);
@@ -1331,6 +1336,8 @@ document.getElementById('return-button').addEventListener('click', () => {
     // mostra i punti della mappa quando il video è attivo
     map.setLayoutProperty('places', 'visibility', 'visible');
 
+    document.getElementById('return-button').style.backgroundColor = "#1f18c0";
+    document.getElementById('return-button').style.color = "#f7f7f7";
 
     const width = window.innerWidth;
     const isMobileOrTablet = width <= 1024;
