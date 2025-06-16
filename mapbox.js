@@ -1013,7 +1013,7 @@ const showCard = (feature) => {
         offset = [0, 125];
     } else if (width <= 950) {
         // Mobile orizzontale
-        offset = [-100, -20];
+        offset = [125, 125];
     } else if (width <= 1024) {
         // Tablet
         offset = [0, 200];
