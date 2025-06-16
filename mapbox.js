@@ -667,7 +667,7 @@ const showCard = (feature) => {
 
                             const overlay = document.querySelector('.extra-overlay');
                             const offsetX = 18;
-                            const offsetY = 60;
+                            const offsetY = 100;
                             const left = overlay.clientWidth - tooltip.offsetWidth - offsetX;
                             const top = overlay.clientHeight - tooltip.offsetHeight - offsetY;
 
