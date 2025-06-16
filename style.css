@@ -1600,6 +1600,14 @@ img[id^="areatempo"] {
 /* Tablet (fino a 1024px) */
 
 @media (max-width: 1024px) {
+    html, body {
+        height: 100vh;
+    }
+
+    .pagina-mappa {
+        height: 100vh;
+    }
+
 
     .bottoni-scroll {
         width: 100%;
@@ -2267,6 +2275,15 @@ img[id^="areatempo"] {
 
 /* Mobile (fino a 768px) */
 @media (max-width: 768px) {
+
+    html, body {
+        height: 100svh;
+    }
+
+    .pagina-mappa {
+        height: 100svh;
+    }
+
 
     #consorzio {
         padding-left: 2%;
