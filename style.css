@@ -12,7 +12,8 @@ html, body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    height: 100svh;
+    height: 94svh;
+    border-bottom: 1px solid black;
     width: 100%;
 }
 
@@ -1610,7 +1611,7 @@ img[id^="areatempo"] {
     }
 
     .pagina-mappa {
-        height: 94vh;
+        height: 90vh;
         border-bottom: 1px solid black;
     }
 
@@ -1769,7 +1770,7 @@ img[id^="areatempo"] {
     }
 
     .extra-overlay {
-        height: 96%;
+        height: 95.8%;
     }
 
     #tooltip-img {
@@ -1796,6 +1797,22 @@ img[id^="areatempo"] {
         margin-bottom: 2%;
     }
 
+    #mostra-tutto-btn {
+        border-radius: none;
+        background-color: #1f18c0;
+        color: #f7f7f7;
+        border: 1px solid black;
+    }
+
+    #btn-specie {
+        border-radius: none;
+        background-color: transparent;
+        color: black;
+        border: 1px solid black;
+    }
+
+
+
 
 
 }
@@ -1803,6 +1820,13 @@ img[id^="areatempo"] {
 
 /* Mobile orizzontale */
 @media (max-width: 950px) {
+
+    .pagina-mappa {
+        height: 93vh;
+        border-bottom: 1px solid black;
+    }
+
+
     .header-home {
         font-size: small;
         height: 13px;
