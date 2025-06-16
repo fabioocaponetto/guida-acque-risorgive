@@ -1826,11 +1826,6 @@ img[id^="areatempo"] {
         border-bottom: 1px solid black;
     }
 
-    .frase {
-        font-size: xx-large;
-    }
-
-
     .header-home {
         font-size: small;
         height: 13px;
@@ -2221,6 +2216,10 @@ img[id^="areatempo"] {
 
     html, body {
         height: 100svh;
+    }
+
+    .frase {
+        font-size: xx-large;
     }
 
     .pagina-mappa {
