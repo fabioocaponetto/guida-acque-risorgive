@@ -547,7 +547,7 @@ const showCard = (feature) => {
                 const numeroClassi = Object.keys(groups).length;
                 const larghezzaColonna = 100 / numeroClassi + "%";
 
-                const isMobile = width <= 950
+                const isMobile = width <= 1200
 
                 container.style.display = 'flex';
                 container.style.justifyContent = 'flex-start';
