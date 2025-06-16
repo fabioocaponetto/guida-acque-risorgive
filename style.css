@@ -1599,47 +1599,14 @@ img[id^="areatempo"] {
 
 /* Tablet (fino a 1024px) */
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     html, body {
-        height: 100vh;
+        height: 97vh;
     }
 
     .pagina-mappa {
-        height: 100vh;
-    }
-
-
-    .bottoni-scroll {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        flex-wrap: wrap; /* <--- permette di andare a capo */
-        justify-content: flex-start;
-    }
-
-    #cosa-facciamo2,
-    #contattaci2 {
-        width: 50%; /* <--- affiancati */
-        height: auto;
-        border-right: none;
-        border-right: 1px solid black;
-        display: inline-block;
-        vertical-align: top;
-        border-bottom: none; /* <--- togli bordo a destra all'ultimo */
-        box-sizing: border-box;
-    }
-
-    #contattaci2 {
-        border-right: none; /* <--- togli bordo a destra all'ultimo */
-    }
-
-    .esplora-mappa {
-        width: 100%; /* <--- va sotto, largo come due sopra */
-        clear: both;
-        height: auto; /* oppure imposta un'altezza fissa */
-        z-index: 100;
-        border-top: 1px solid black;
+        height: 90vh;
+        border-bottom: 1px solid black;
     }
 
     .info-territorio {
@@ -1829,115 +1796,32 @@ img[id^="areatempo"] {
         height: 100%;
         position: relative;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-wrap: wrap; /* <--- permette di andare a capo */
+        justify-content: flex-start;
     }
 
-    #cosa-facciamo2, #contattaci2 {
-        position: relative;
-        width: 25%;
-        border-right: solid 1px black;
-        cursor: pointer;
-        transition: transform 0.5s ease;
-        z-index: 10;
-    }
-
-    #cosa-facciamo2::before, #contattaci2::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 99.8%;
-        height: 100%;
-        background-color: #1f18c0; /* colore che vuoi */
-        transform: scaleX(1) scaleY(0.02);  /* inizialmente largo 50%, alto 5% */
-        transform-origin: top left;  /* da dove parte la trasformazione */
-        transition: transform 0.5s ease;
-        border-right: solid 1px #1f18c0;
-        z-index: 0;
-    }
-
-    #contattaci2::before {
-        background-color: #e0e73f;
-        z-index: 0;
-        border-right: none;
-
-    }
-
-    #cosa-facciamo2.attivo::before {
-        transform: scaleX(1) scaleY(1); 
-    }
-
-    #contattaci2.attivo::before {
-        transform: scaleX(1) scaleY(1); 
-    }
-
-    #cosa-facciamo2 a, #contattaci2 a {
-        position: absolute;
-        color: black;
-        left: 2%;
-        top: 5%;
-        padding: 5px;
-        padding-right: 10px;
-        font-size: small;
-        transition: transform 0.5s ease;
-    }
-
-    #simbolo-paragrafo, #simbolo-paragrafo2 {
-        position: absolute;
-        bottom: 20px;
-        right: 10px;
-        transform: scale(0.1) rotate(-45deg);
+    #cosa-facciamo2,
+    #contattaci2 {
+        width: 50%; /* <--- affiancati */
         height: auto;
-        transform-origin: bottom right;
-        transition: transform 0.5s ease;
+        border-right: none;
+        border-right: 1px solid black;
+        display: inline-block;
+        vertical-align: top;
+        border-bottom: none; /* <--- togli bordo a destra all'ultimo */
+        box-sizing: border-box;
     }
 
-    #simbolo-paragrafo.show, #simbolo-paragrafo2.show {
-        position: absolute;
-        transform: scale(0.2);
-        bottom: 15px;
-        right: 10px;
-        transition: transform 0.5s ease;
+    #contattaci2 {
+        border-right: none; /* <--- togli bordo a destra all'ultimo */
     }
 
     .esplora-mappa {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        height: 100%;
-        cursor: pointer;
-        overflow: hidden; /* per tagliare l’immagine se esce */
-        background-color: black;
-        border: none;
-    }
-
-    .esplora-mappa a {
-        padding: 10px;
-        background-color: #1f18c0;
-        border: solid 1px black;
-        color: #f7f7f7;
-        font-size: x-small;
-        z-index: 10;
-        text-align: center;
-        transition: 0.2;
-        cursor: pointer;
-    }
-
-    .esplora-mappa img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;       /* riempi tutto il container */
-        height: 100%;      /* riempi tutto il container */
-        object-fit: cover; /* ridimensiona senza deformare */
-        z-index: 0;
-        opacity: 1;
-        pointer-events: none; /* per non interferire con i clic sul testo */
-        transition: transform 0.5s ease;
-        pointer-events: none;
+        width: 100%; /* <--- va sotto, largo come due sopra */
+        clear: both;
+        height: auto; /* oppure imposta un'altezza fissa */
+        z-index: 100;
+        border-top: 1px solid black;
     }
 
     #testo-bottoni-scroll {
@@ -2281,7 +2165,7 @@ img[id^="areatempo"] {
     }
 
     .pagina-mappa {
-        height: 100svh;
+        height: 90svh;
     }
 
 
@@ -2343,6 +2227,7 @@ img[id^="areatempo"] {
     .testo-info-consorzio {
         width: 90%;
         padding-left: 3%;
+        font-size: x-small;
     }
 
     .img-info-consorzio {
@@ -2359,6 +2244,7 @@ img[id^="areatempo"] {
     .testo-info-territorio {
         width: 90%;
         padding-left: 3%;
+        font-size: x-small;
     }
 
     .tooltipinfotext {
@@ -2379,6 +2265,7 @@ img[id^="areatempo"] {
     .frase-attivita {
         width: 90%;
         padding-left: 3%;
+        font-size: x-small;
     }
 
     .lavori-principali {
@@ -2396,6 +2283,7 @@ img[id^="areatempo"] {
     #testo-argini, #testo-fitodepurazione {
         width: 90%;
         padding-left: 3%;
+        font-size: x-small;
     }
 
     .lavori-principali .argini.attivo,
@@ -2432,13 +2320,15 @@ img[id^="areatempo"] {
         margin-top: 5%;
         margin-bottom: 5%;
     }
-
+ 
     .grafico-embed {
         margin-top: 5%;
     }
 
     #testo-grafico-specie {
         width: 90%;
+        font-size: x-small;
+        margin-left: 2%;
     }
 
     .inline-gradient-text {
@@ -2466,6 +2356,7 @@ img[id^="areatempo"] {
         width: 90%;
         padding-left: 3%;
         padding-right: 0%;
+        font-size: x-small;
     }
 
     .carosello-img {
@@ -2675,6 +2566,23 @@ img[id^="areatempo"] {
 
 /* Mobile (fino a 768px) */
 @media (max-width: 361px) {
+    #cosa-facciamo2 a, #contattaci2 a {
+        font-size: medium;
+    }
+
+    .esplora-mappa a{
+        font-size: small;
+    }
+
+    #testo-bottoni-scroll {
+        font-size: x-small;
+    }
+
+    #simbolo-paragrafo, #simbolo-paragrafo2 {
+        bottom: 20px;
+        right: 10px;
+    }
+
     .descr-item, .descrizione-area, .curiosita, #testo-specie-presente, #testo-specie-reinserite, #riquadro-testo {
         font-size: xx-small;
     }
