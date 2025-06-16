@@ -12,7 +12,7 @@ html, body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    height: 94svh;
+    height: 100svh;
     border-bottom: 1px solid black;
     width: 100%;
 }
@@ -1611,7 +1611,7 @@ img[id^="areatempo"] {
     }
 
     .pagina-mappa {
-        height: 90vh;
+        height: 100vh;
         border-bottom: 1px solid black;
     }
 
@@ -1822,7 +1822,7 @@ img[id^="areatempo"] {
 @media (max-width: 950px) {
 
     .pagina-mappa {
-        height: 93vh;
+        height: 100vh;
         border-bottom: 1px solid black;
     }
 
@@ -2054,7 +2054,28 @@ img[id^="areatempo"] {
     }
 
     .image-container {
-        height: 300px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .areatempo1,
+    .areatempo2,
+    .areatempo3,
+    .areatempo4 {
+        width: 50%;              /* 2 per riga */
+        height: 400px;           /* altezza dimezzata */
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .areatempo2,
+    .areatempo4 {
+        border-right: none;      /* niente bordo a destra sugli elementi di destra */
+    }
+
+    .areatempo3,
+    .areatempo4 {
+        border-bottom: none;     /* niente bordo in basso sull’ultima riga */
     }
 
     .areatempo1 p,
@@ -2065,9 +2086,13 @@ img[id^="areatempo"] {
     }
 
     .curiosita {
-        margin-top: 2%;
-        font-size: x-small;
-        margin-bottom: 9%;
+        margin-top: 10%;
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .grandezza, .posizione, .testo-curiosita {
+        width: 90%;
     }
 
     .specie-area {
@@ -2218,13 +2243,14 @@ img[id^="areatempo"] {
         height: 100svh;
     }
 
-    .frase {
-        font-size: xx-large;
-    }
-
     .pagina-mappa {
         height: 100svh;
     }
+
+    .frase {
+        font-size: x-large;
+    }
+
 
 
     #consorzio {
@@ -2620,9 +2646,9 @@ img[id^="areatempo"] {
     }
 
     #tooltip-img {
-        width: 150px;
+        width: 200px;
         height: auto;
-        max-height: 350px;
+        max-height: 450px;
         font-family: sans-serif;
     }
 
