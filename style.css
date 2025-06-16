@@ -2034,6 +2034,7 @@ img[id^="areatempo"] {
         width: 70%;
         margin-top: 2%;
         margin-bottom: 3%;
+        font-size: medium;
     }
 
     .grandezza {
@@ -2082,7 +2083,7 @@ img[id^="areatempo"] {
     .areatempo2 p,
     .areatempo3 p,
     .areatempo4 p {
-        font-size: medium;
+        font-size: xx-large;
     }
 
     .curiosita {
@@ -2106,6 +2107,10 @@ img[id^="areatempo"] {
 
     #img-specie-presente, #img-specie-reinserite {
         height: 175px;
+    }
+
+    #testo-specie-presente, #testo-specie-reinserite {
+        font-size: medium;
     }
 
     #preview-next-specie {
@@ -2248,7 +2253,7 @@ img[id^="areatempo"] {
     }
 
     .frase {
-        font-size: x-large;
+        font-size: xx-large;
     }
 
 
@@ -2541,6 +2546,7 @@ img[id^="areatempo"] {
         width: 90%;
         margin-top: 5%;
         margin-bottom: 10%;
+        font-size: x-small;
     }
 
     .image-container {
@@ -2583,6 +2589,7 @@ img[id^="areatempo"] {
 
     .grandezza, .posizione, .testo-curiosita {
         width: 90%;
+        font-size: x-small;
     }
 
     .specie-area {
@@ -2593,6 +2600,10 @@ img[id^="areatempo"] {
 
     .specie-presente, .specie-reinserite {
         width: 90%;
+    }
+
+    #testo-specie-presente, #testo-specie-reinserite {
+        font-size: x-small;
     }
 
     .specie-reinserite {
@@ -2675,7 +2686,7 @@ img[id^="areatempo"] {
         right: 10px;
     }
 
-    .descr-item, .descrizione-area, .curiosita, #testo-specie-presente, #testo-specie-reinserite, #riquadro-testo {
+    .descr-item, .descrizione-area, .curiosita, #testo-specie-presente, #testo-specie-reinserite, #riquadro-testo, .grandezza, .posizione, .testo-curiosita {
         font-size: xx-small;
     }
 }
