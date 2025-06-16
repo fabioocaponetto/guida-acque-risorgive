@@ -1604,8 +1604,13 @@ img[id^="areatempo"] {
         height: 97vh;
     }
 
+    .frase {
+        font-size: 60px;
+
+    }
+
     .pagina-mappa {
-        height: 90vh;
+        height: 94vh;
         border-bottom: 1px solid black;
     }
 
@@ -1763,6 +1768,35 @@ img[id^="areatempo"] {
         left:37%
     }
 
+    .extra-overlay {
+        height: 96%;
+    }
+
+    #tooltip-img {
+        width: 300px;
+        height: auto;
+        max-height: 500px;
+        font-family: sans-serif;
+    }
+
+    #tooltip-img img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+        margin-bottom: 2%;
+    }
+
+    #tooltip-img .info {
+        font-size: xx-small;
+    }
+
+    #tooltip-img .info span {
+        display: block;
+        margin-bottom: 2%;
+    }
+
+
 
 }
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1776,10 +1810,6 @@ img[id^="areatempo"] {
 
     .griglia {
         margin-top: 34px;
-    }
-
-    .frase {
-        font-size: 30px;
     }
 
     .link {
@@ -1930,6 +1960,7 @@ img[id^="areatempo"] {
 
     .extra-overlay {
         top:10px;
+        height: 99%;
     }
 
     .titolo_overlay {
@@ -2034,9 +2065,9 @@ img[id^="areatempo"] {
     }
 
     #tooltip-img {
-        width: 150px;
+        width: 300px;
         height: auto;
-        max-height: 350px;
+        max-height: 500px;
         font-family: sans-serif;
     }
 
@@ -2560,6 +2591,14 @@ img[id^="areatempo"] {
         margin-top: 5%;
         padding-left: 1%;
     }
+
+    #tooltip-img {
+        width: 150px;
+        height: auto;
+        max-height: 350px;
+        font-family: sans-serif;
+    }
+
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
