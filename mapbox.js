@@ -347,7 +347,7 @@ const showCard = (feature) => {
                         <div>
                             <button id="satellite-button"><code>SATELLITE</code></button>
                             <button id="acqua-button"><code>ACQUA</code></button>                        
-                            <button id="flora-button"><code>FLORA</code></button>
+                            <button id="flora-button"><code>VEGETAZIONE</code></button>
                         </div>
                     </div>
                     <div class="image-container">
