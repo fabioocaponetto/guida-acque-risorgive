@@ -2316,7 +2316,7 @@ img[id^="areatempo"] {
     .testo-info-consorzio {
         width: 90%;
         padding-left: 3%;
-        font-size: x-small;
+        font-size: small;
     }
 
     .img-info-consorzio {
@@ -2333,7 +2333,7 @@ img[id^="areatempo"] {
     .testo-info-territorio {
         width: 90%;
         padding-left: 3%;
-        font-size: x-small;
+        font-size: small;
     }
 
     .tooltipinfotext {
@@ -2354,7 +2354,7 @@ img[id^="areatempo"] {
     .frase-attivita {
         width: 90%;
         padding-left: 3%;
-        font-size: x-small;
+        font-size: small;
     }
 
     .lavori-principali {
@@ -2372,7 +2372,7 @@ img[id^="areatempo"] {
     #testo-argini, #testo-fitodepurazione {
         width: 90%;
         padding-left: 3%;
-        font-size: x-small;
+        font-size: small;
     }
 
     .lavori-principali .argini.attivo,
@@ -2416,7 +2416,7 @@ img[id^="areatempo"] {
 
     #testo-grafico-specie {
         width: 90%;
-        font-size: x-small;
+        font-size: small;
         margin-left: 2%;
     }
 
@@ -2445,7 +2445,7 @@ img[id^="areatempo"] {
         width: 90%;
         padding-left: 3%;
         padding-right: 0%;
-        font-size: x-small;
+        font-size: small;
     }
 
     .carosello-img {
@@ -2458,7 +2458,7 @@ img[id^="areatempo"] {
     }
 
     #info-img-nome, #info-img-dati {
-        font-size: xx-small;
+        font-size: x-small;
     }
 
     .carosello-btn-sinistra {
@@ -2546,7 +2546,7 @@ img[id^="areatempo"] {
         width: 90%;
         margin-top: 5%;
         margin-bottom: 10%;
-        font-size: x-small;
+        font-size: small;
     }
 
     .image-container {
@@ -2578,7 +2578,7 @@ img[id^="areatempo"] {
     .areatempo2 p,
     .areatempo3 p,
     .areatempo4 p {
-        font-size: medium;
+        font-size: large;
     }
 
     .curiosita {
@@ -2589,7 +2589,7 @@ img[id^="areatempo"] {
 
     .grandezza, .posizione, .testo-curiosita {
         width: 90%;
-        font-size: x-small;
+        font-size: small;
     }
 
     .specie-area {
@@ -2603,7 +2603,7 @@ img[id^="areatempo"] {
     }
 
     #testo-specie-presente, #testo-specie-reinserite {
-        font-size: x-small;
+        font-size: small;
     }
 
     .specie-reinserite {
@@ -2663,6 +2663,11 @@ img[id^="areatempo"] {
         font-family: sans-serif;
     }
 
+    #simbolo-paragrafo, #simbolo-paragrafo2 {
+        bottom: 20px;
+        right: 10px;
+    }
+
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
@@ -2690,7 +2695,3 @@ img[id^="areatempo"] {
         font-size: xx-small;
     }
 }
-
-
-
-
