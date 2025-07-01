@@ -203,39 +203,50 @@
     </div>
 
     <div class="footer">
-        <div class="loghi">
-            <div id="acque-risorgive"><a>Acque Risorgive<br>Consorzio di bonifica</a></div>
-            <img src="img/anbi_veneto.webp" id="logo-anbi">
-        </div>
-        <div class="contatti">
-            <div class="numero">
-                <a id="titoletto-footer">numero</a><br>
-                    <a id="descr-footer">+39 041 545 9111</a>
+        <div class="footer-info">
+            <div class="loghi">
+                <div id="acque-risorgive"><a>Acque Risorgive<br>Consorzio di bonifica</a></div>
+                <img src="img/anbi_veneto.webp" id="logo-anbi">
             </div>
-            <div class="mail">
-                <div id="mail-testo">
-                    <!-- <a><u>Contatti</u></a><br><br> -->
-                    <a id="titoletto-footer">sede</a><br>
-                    <a id="descr-footer"> via Rovereto, 12 - 30174 - Venezia</a><br><br>
-                    <a id="titoletto-footer">email</a><br>
-                    <a id="descr-footer"> consorzio@acquerisorgive.it</a><br><br>
-                    <a id="titoletto-footer">p.e.c.</a><br>
-                    <a id="descr-footer"> consorzio@pec.acquerisorgive.it</a>
+            <div class="contatti">
+                <div class="numero">
+                    <a id="titoletto-footer">numero</a><br>
+                        <a id="descr-footer">+39 041 545 9111</a>
                 </div>
-                <div id="numeri-testo">
-                    <!-- <a><u>Numeri di emergenza</u></a><br><br> -->
-                    <a id="titoletto-footer">Venezia</a><br>
-                    <a id="descr-footer">+39 335 7489972</a><br><br>
-                    <a id="titoletto-footer">Mirano</a><br>
-                    <a id="descr-footer">+39 348 6015269</a>
+                <div class="mail">
+                    <div id="mail-testo">
+                        <!-- <a><u>Contatti</u></a><br><br> -->
+                        <a id="titoletto-footer">sede</a><br>
+                        <a id="descr-footer"> via Rovereto, 12 - 30174 - Venezia</a><br><br>
+                        <a id="titoletto-footer">email</a><br>
+                        <a id="descr-footer"> consorzio@acquerisorgive.it</a><br><br>
+                        <a id="titoletto-footer">p.e.c.</a><br>
+                        <a id="descr-footer"> consorzio@pec.acquerisorgive.it</a>
+                    </div>
+                    <div id="numeri-testo">
+                        <!-- <a><u>Numeri di emergenza</u></a><br><br> -->
+                        <a id="titoletto-footer">Venezia</a><br>
+                        <a id="descr-footer">+39 335 7489972</a><br><br>
+                        <a id="titoletto-footer">Mirano</a><br>
+                        <a id="descr-footer">+39 348 6015269</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div>
-            <img src="img/freccia giu blu.svg" href="#" class="back-to-top">
+        <div class="footer-crediti">
+            <div class="crediti-collab">
+                In collaborazione con<br>Osservatorio Citizen Science<br>ISPRA Network Nazionale Biodiversità<br>Consorzio di Bonifica Acque Risorgive
+            </div>
+            <div class="crediti-testo-uni">
+                Progetto realizzato all’interno del laboratorio di Information Design del Corso di laurea Magistrale in Interaction & Experience Design dell'Università della Repubblica di San Marino.<br><br>
+                Docenti<br>Giorgio Uboldi, Marco Luitprandi.
+            </div>
         </div>
-    </div>
+            <div>
+                <img src="img/freccia giu blu.svg" href="#" class="back-to-top">
+            </div>
 
+    </div>
 
 <script>
     const imagesToPreload = [
@@ -813,7 +824,7 @@ document.querySelector('#avanti-carosello').addEventListener('mouseleave', funct
 });
 
 function aggiornaTestiPerMobileVert() {
-    const isMobileVert = window.innerWidth <= 768;
+    const isMobileVert = window.innerWidth <= 1200;
 
     if (isMobileVert) {
         document.querySelector('#consorzio').innerHTML = 'Consorzio Acque Risorgive';
